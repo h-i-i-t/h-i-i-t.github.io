@@ -12,8 +12,6 @@ import "prismjs/themes/prism.css"
 import React from 'react'
 import MuiThemeProvider from './src/components/mui-theme-provider'
 
-export const wrapRootElement = ({
-    element,
-}) => {
+export const wrapRootElement = ({ element }) => {
     return <MuiThemeProvider>{element}</MuiThemeProvider>
 }
