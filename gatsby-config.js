@@ -1,17 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `HIIT Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `HI IT`,
+      summary: `who lives and works in Japan building useful things.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `日々学んだことなどを書き溜めていく`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `H_i_I_t`,
     },
   },
   plugins: [
+    `gatsby-plugin-material-ui`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
