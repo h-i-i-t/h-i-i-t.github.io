@@ -1,15 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `HIIT Blog`,
+    title: `hi1t0 Blog`,
     author: {
-      name: `HI IT`,
+      name: `hi1t0`,
       summary: `who lives and works in Japan building useful things.`,
     },
-    description: `日々学んだことなどを書き溜めていく`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `日々学んだことなどを書き溜めていく。主にjavascript、react、html、css、firebase、flutter、githubなどweb制作のものが多くなると思います`,
+    siteUrl: `https://hi1t0.github.io`,
     social: {
-      twitter: `__hiit`,
+      twitter: `hi1t0`,
     },
+    // category: ["Github", "Flutter", "React"],
   },
   plugins: [
     `gatsby-plugin-material-ui`,
@@ -106,7 +107,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
+            title: "hi1t0 RSS Feed",
           },
         ],
       },
@@ -114,8 +115,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `hi1t0 Blog`,
+        short_name: `hi1t0`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
