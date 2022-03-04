@@ -10,7 +10,7 @@ module.exports = {
       summary: `who lives and works in Japan building useful things.`,
     },
     description: `日々学んだことなどを書き溜めていく。主にjavascript、react、html、css、firebase、flutter、githubなどweb制作のものが多くなると思います`,
-    siteUrl: `https://hi1t0.github.io`,
+    siteUrl: `https://hi1t0.com`,
     social: {
       twitter: `hi1t0`,
     },
@@ -19,6 +19,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
