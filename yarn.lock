@@ -5482,6 +5482,13 @@
     "@emotion/cache" "^11.4.0"
     "@emotion/server" "^11.4.0"
 
+"gatsby-plugin-no-sourcemaps@^4.9.0":
+  "integrity" "sha512-l2NB0Ninx0t3gQRQtOHK5aQvoIP3t9rIHk04z9544MVKAI65/TYrKTKJR8BJNh25fqhz5m1wCraUKrfuN2gh+w=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-no-sourcemaps/-/gatsby-plugin-no-sourcemaps-4.9.0.tgz"
+  "version" "4.9.0"
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+
 "gatsby-plugin-offline@^5.8.0":
   "integrity" "sha512-MwcJrN06p4qTy/JGYjZzjmGRvyVIM5hB3HmGL82yeaTQNUTbqPK1CE0N2Wz5YZ9KgqF1lGyvirp2phmV7bf6yA=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-offline/-/gatsby-plugin-offline-5.8.1.tgz"
