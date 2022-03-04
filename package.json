@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "hi1t0-blog",
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "hi1t0",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -22,6 +22,7 @@
     "gatsby-plugin-offline": "^5.8.0",
     "gatsby-plugin-react-helmet": "^5.8.0",
     "gatsby-plugin-sharp": "^4.8.0",
+    "gatsby-plugin-sitemap": "^5.9.0",
     "gatsby-remark-copy-linked-files": "^5.8.0",
     "gatsby-remark-images": "^6.8.0",
     "gatsby-remark-prismjs": "^6.8.0",
@@ -40,7 +41,7 @@
   "devDependencies": {
     "prettier": "^2.5.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://hi1t0.com",
   "keywords": [
     "gatsby"
   ],
