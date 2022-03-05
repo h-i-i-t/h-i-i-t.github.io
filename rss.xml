@@ -1,4 +1,171 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hi1t0 RSS Feed]]></title><description><![CDATA[日々学んだことなどを書き溜めていく。主にjavascript、react、html、css、firebase、flutter、githubなどweb制作のものが多くなると思います]]></description><link>https://hi1t0.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 04 Mar 2022 11:26:48 GMT</lastBuildDate><item><title><![CDATA[Github Actionsでnpm ciがうまく通らなかった]]></title><description><![CDATA[原因は yarn で material ui のパッケージを入れたことだった は package-lock.json を参照し適切な node_modules を使えるようにするみたい した後は で package-lock.json…]]></description><link>https://hi1t0.com/20220304/</link><guid isPermaLink="false">https://hi1t0.com/20220304/</guid><pubDate>Fri, 04 Mar 2022 11:11:11 GMT</pubDate><content:encoded>&lt;p&gt;原因は yarn で material ui のパッケージを入れたことだった&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hi1t0 RSS Feed]]></title><description><![CDATA[日々学んだことなどを書き溜めていく。主にjavascript、react、html、css、firebase、flutter、githubなどweb制作のものが多くなると思います]]></description><link>https://hi1t0.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 05 Mar 2022 01:43:14 GMT</lastBuildDate><item><title><![CDATA[Google AnalyticsとGoogle Search Consoleを登録する]]></title><description><![CDATA[Google 検索してもサイトが出てこないので調べてみたら、Google Search Console を登録すると検索結果の表示改善につながるということなので登録します  とその前段階でGoogle Analytics…]]></description><link>https://hi1t0.com/20220305/</link><guid isPermaLink="false">https://hi1t0.com/20220305/</guid><pubDate>Sat, 05 Mar 2022 11:11:11 GMT</pubDate><content:encoded>&lt;p&gt;Google 検索してもサイトが出てこないので調べてみたら、Google Search Console を登録すると検索結果の表示改善につながるということなので登録します&lt;/p&gt;
+&lt;div style=&quot;width: 100%; margin-left: auto; margin-right: auto&quot;&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/df878b6bf6d42d938306eb7abeb36943/f2f8c/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 67.72151898734178%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAABvElEQVQ4y41SCY6kMAzk/2/rB7SAFdPTB/dNDshRI5sNYlszo7VkkpikXGU78t5jXVdordk3Y0Cx/3XnHKzzMHY/R8YY1HWNIs9RFAXmeQbZTwDv/5TWkFJjFharcYi8d7DWwTgwUykllFK83zZzMCen2LIsvIa71lpYa7BtK7ON6FMMG9rFQWvJDNd1f2ydhTHbXopt48fzsvCeYkKIgzXFdkDvIbWD0g7GAM4C1tIFh3WlJMTA85nWIJmMABYhoNSekGvonMftY0Qa90iTDkncIE0a3D8XFC+F7M+CaTSoSg2lHN6NQIMxIMm4Xq+4XC5Ikhiv1xN5/kLbNpBKQoiF91VVQUiBYRhQVTU3sOt7ll2WFcZxZNCIUKdp4k7Tes4WbC+8PcaE5IWmUTzUmAEpUNc7g9vtkzMTC0rweDzxfL7Q9z3atmMW5GeZZzvmMMs+UJYlP6RMFKNV/c0czsED4HczypJptmim6LKQ8hgJAiJGtA+SvivJ2SL6kLz7/YGmaZBlGeI4QZqmHCPmbdvysJ9Z/QTKgNQMkkv1IwBiNQwj8rzANM/ouv4fmb9Z9H7hfA5dJf+N1RnwC26QQ6cuDIGQAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;test&quot;
+        title=&quot;test&quot;
+        src=&quot;/static/df878b6bf6d42d938306eb7abeb36943/f058b/1.png&quot;
+        srcset=&quot;/static/df878b6bf6d42d938306eb7abeb36943/c26ae/1.png 158w,
+/static/df878b6bf6d42d938306eb7abeb36943/6bdcf/1.png 315w,
+/static/df878b6bf6d42d938306eb7abeb36943/f058b/1.png 630w,
+/static/df878b6bf6d42d938306eb7abeb36943/40601/1.png 945w,
+/static/df878b6bf6d42d938306eb7abeb36943/78612/1.png 1260w,
+/static/df878b6bf6d42d938306eb7abeb36943/f2f8c/1.png 1490w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;とその前段階で&lt;a href=&quot;https://analytics.google.com/&quot;&gt;Google Analytics&lt;/a&gt;に登録しておきます。&lt;/p&gt;
+&lt;p&gt;アナリティクスの登録はこちらを見るとわかりやすいです&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.gpol.co.jp/blog/100&quot;&gt;Google アナリティクスのトラッキング ID 発行・設定方法&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;トラッキング ID は G から始まる方のを使う。トラッキング ID を発行できたら gatsby-config.js で&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// {&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//   resolve: `gatsby-plugin-google-analytics`,&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//   options: {&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//     trackingId: `ADD YOUR TRACKING ID HERE`,&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//   },&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// },&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;del&gt;この部分のコメントアウトを外し、トラッキング ID を入力する&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;どうやら gatsby-plugin-google-analytics は古いらしく今は&lt;code class=&quot;language-text&quot;&gt;gatsby-plugin-google-gtag&lt;/code&gt;を使う&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;$ npm i gatsby&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;plugin&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;google&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;gtag&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;でパッケージをインストールし&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;gatsby-plugin-google-gtag&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token literal-property property&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token literal-property property&quot;&gt;trackingIds&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;ADD YOUR TRACKING ID HERE&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;token literal-property property&quot;&gt;pluginConfig&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token literal-property property&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;gatsby-plugin-google-analytic の部分を上記の項目に書き換える&lt;/p&gt;
+&lt;p&gt;Google Search Console のサイトで URL プレフィックスの入力欄に&lt;code class=&quot;language-text&quot;&gt;https://hi1t0.github.io/&lt;/code&gt;を入力、続行をクリック&lt;/p&gt;
+&lt;div style=&quot;width: 100%; margin-left: auto; margin-right: auto&quot;&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/851e847e64a6f6c04e72cb90c143b195/29007/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 83.54430379746836%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAABYlAAAWJQFJUiTwAAACkklEQVQ4y12USXLbMBBFdc3cIdsscoMscxavYy9ciWVZsqyBmkdbsmRbFOcJAImf6uZgWqj6hUZX8aHx0WAjTBRikSIWGYTSSGQ+53Guep7mXJ+5/PsUYazQUCoDDaUUwiiCEAJRHLMSIRAnCaIohpB5LKSElJJjEn2TZTlDqgwNoVJexInAdv+K6XKN2XqL7f6A6WqD/fEdx48TVs87zFZbfJwtWI6Ld/MMx/Ng2g6kVMwQMkVDpTm9Piiny1kDWaZ5Qy+IIJVCIiTrcnCFsZCwPR+W67FMx8HZcTgu8wSjobWuVK7puLzWOq/Q8UJ0xjM8jmfojKZY7g54eTuhO5lz7sGY4PBhMoAqLYHkY5qSXfoC6Id4mswZYCzXsL0QUSyxfd1VGx1PZlVRaclm9wbzbNcOXAMS7Gm6wMNwgvlmi+XLEX+6z+jNFgytA5VK2b/ngwXb9aDSlCu/AM7QnSzQ7Bu47XRx3TZw1dxyno58NM9VHWcn95baJYhijmXRKRXwYTjGbaeHv90B2qMpOqMJ2sMh7vsjBu7e3tmjKE4YSLdN4gsTojhxUaFbAG9aj7hutnHT6uCuZ+B+MOZLIjs2+1coKfl4VBVBhFIQUnEbfQFShWR825iwCEJ+lqJc6WEQRrAdD5bt4GRa8PwQKtUsrbNPIEHungb41+2j1Td4TSCqjiwo28Z2fbwcTjhZPkzLh+sniIRm0cV8qbCElCIbSuBl21APnm0bjutC8zvOe7Fo7CDvt6IXCdYajDgm1Rs7b2Sg+djDt+8/8PPXbwRRVG3GQLotY7GqNJwvWbxertGfLXGy7Mr4/MVk/NdRfCH661v2wwR+EMMr5Bfy6rkwQRAlCMJCUYIwFqx6zg8F/gOdSQRr5n3//AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;test&quot;
+        title=&quot;test&quot;
+        src=&quot;/static/851e847e64a6f6c04e72cb90c143b195/f058b/2.png&quot;
+        srcset=&quot;/static/851e847e64a6f6c04e72cb90c143b195/c26ae/2.png 158w,
+/static/851e847e64a6f6c04e72cb90c143b195/6bdcf/2.png 315w,
+/static/851e847e64a6f6c04e72cb90c143b195/f058b/2.png 630w,
+/static/851e847e64a6f6c04e72cb90c143b195/40601/2.png 945w,
+/static/851e847e64a6f6c04e72cb90c143b195/78612/2.png 1260w,
+/static/851e847e64a6f6c04e72cb90c143b195/29007/2.png 1600w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Google Analytics の欄を選択、確認クリック&lt;/p&gt;
+&lt;div style=&quot;width: 100%; margin-left: auto; margin-right: auto&quot;&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/57204e1a0d6ae5c1ea4cdabdbff606f7/71b12/3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 106.32911392405065%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAABYlAAAWJQFJUiTwAAACyUlEQVQ4y6VUW2sTQRTe/6V9K+JDsVgflNpKa+uFYp+EogiCf0B81h9QpEnTCvEGRUXwWaFi0maT7GY32W6yu7ntbTbJJ+ckQ5MK2uDAx5yZOef7zjmzs8qV1Q2sbz3F6sMnuP/4GRY3tzC7uI5LN+9MBYqZu3UPyuyN25hfe4C5lQ3Mr22yfXnpLmauLePiwhIuLiz/EzMLy7hwdQmz11egZN5+RCr7Hq/3s4z9DwfIHnyZEp/x7tNX7LzJQonCADT6vQSJEPif0ajXoXiehyAI0XAcdH0f/X5/iMEAURTD9310u10EQcB2GIaIogidTgftdhu+HyAWAgMAuq4PCcmBnOM4RpIkvB4HkZwFCYyvKa5SqQwJicy2bdTrdQYd9vp93m+1WhPBMkuaZWwsYgwGg1NCIqAS6JCCqeRBvwchQoRBgDgWEEIgETFEHLFN1ZAv2WLUe8MwTkum+mmDVDRNh6o5UPUmjKoN0zRhGgZKlQZKFRemaaBarbJ/uVzm816vNyJsNlkpn8/j6OgIh4eHQ7tQRsWsw7Ybo3bYqFoN1CyH1ycnJwzLsnimKicIpRIp12o1zsKyyK5y9sNzA1atCsM0USgUUCwWWVzTtLEMPY+bnMvlOOisusyAnLl002SbhOUlyoucICSy4+NjzkYGkk3q5iijYVvyLK6qKou5rnuGcFQy9Y+CaVNejmwBrakNMjMSonIpASKm9R+EpZLKQVSe7CMpUwsk6EzOshXkR6BPhwmbTfo4Q/xSHTiOC9d1uAyC4zh/hee56LTbaDW9yUshdtdr8ds8L+ghNBwXJd1AUavAD0NukUKZTDvomdH4kVex9fwlHr14hW/ff8Kp21CoJ/JtTgOKabgu8sUycoUiHK8JXdeg0K9pXPU8Ixr9baIoROD7vCeSHl+UkkrtYG9vD5lMZmrs7u4ilU4jnU7zent7G78BiA3W9FtCIpgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;test&quot;
+        title=&quot;test&quot;
+        src=&quot;/static/57204e1a0d6ae5c1ea4cdabdbff606f7/f058b/3.png&quot;
+        srcset=&quot;/static/57204e1a0d6ae5c1ea4cdabdbff606f7/c26ae/3.png 158w,
+/static/57204e1a0d6ae5c1ea4cdabdbff606f7/6bdcf/3.png 315w,
+/static/57204e1a0d6ae5c1ea4cdabdbff606f7/f058b/3.png 630w,
+/static/57204e1a0d6ae5c1ea4cdabdbff606f7/40601/3.png 945w,
+/static/57204e1a0d6ae5c1ea4cdabdbff606f7/78612/3.png 1260w,
+/static/57204e1a0d6ae5c1ea4cdabdbff606f7/71b12/3.png 1308w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;以下のように確認ができる&lt;/p&gt;
+&lt;div style=&quot;width: 100%; margin-left: auto; margin-right: auto&quot;&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/65d2f67c42ddc5c02bd2bf29c47920b4/5d6a0/4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 82.27848101265823%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAACtUlEQVQ4y52UW08TQRTH+wHkyRcfNCb6CeDNJx+M8mCIxgAaiUEiLbS7ve2le5u9tYCJEcELl0h48AuQGCMxfhuRljY20u0Nyhb+ZmaXhqKJ0U1+OTPnzPx6utmZCCEmLMti2Lb9R6yzY+t3zHC/QUxETNOE49jQDB1ZUUJGEJEWBGRFkSFIEmRFYTEjimysahqLOVWFlMuBhA7aXIRNbBuOaYFoBtScCkVWoCkai7qqM3KyAkmUQXSjlzMNAssw4ZhB9yTo0ILp2BBcHXKeQHR1CI7GoujokFwDuTyB7BJIjsHiKUrBDMibsGwrEFoqwYgWw/UPUVzZeIprm89wdXMKlzcmcen9E1xcf4wLK2MYWB0PGQsZxwDNr4yxetJV4Bg2Irqs4YHB4c7XOdzednH3yxyGt/O49dnGzU8ENz5qGNwSMbQlYfAcQyG0np0zYBkWIumsgDcrqzg4OoTXbODQP2J0uj6Ouj78bhfHx8d/ZWlpCYqqBcJ3a+toNhqolMvwah5b8K9Pn5B22Ol08HN/H7VaDc1mE61WC169jppXQ6PZCHLtNvZrwZyO2+02yx8cHOD18nK/sF6vo7S3xyR0ERVXq1WUy2UWPc/rg/4gFbZaTfi+j+Wzwrera/if5+QE8LvB6+kJs4KIF4uv8KNaRalUQqm0xzo9C+2yUqkwgjUl7BaL+L67i287OygWi1hcfAmVCql1huMRT6YwyycRpyRTiPMpcOkMEqk0FE2D67q9M18o5PF8YQEL8/PI5/O9GvuwqTDG8YgmOEQTPKJxDtNxjs1jCR7T8QREWQ42sDPrYDbBY3jkPkYfTcAgBPQ+6BcmeMS4JONUSscz4VzKKUxEbx3aUTKdwb3Rh5iYnGIiWuudZU3XIYgSu2nOc5qntwvtghDCoJsL4V8lYZ7WDYPgF74giXossQTDAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;test&quot;
+        title=&quot;test&quot;
+        src=&quot;/static/65d2f67c42ddc5c02bd2bf29c47920b4/f058b/4.png&quot;
+        srcset=&quot;/static/65d2f67c42ddc5c02bd2bf29c47920b4/c26ae/4.png 158w,
+/static/65d2f67c42ddc5c02bd2bf29c47920b4/6bdcf/4.png 315w,
+/static/65d2f67c42ddc5c02bd2bf29c47920b4/f058b/4.png 630w,
+/static/65d2f67c42ddc5c02bd2bf29c47920b4/40601/4.png 945w,
+/static/65d2f67c42ddc5c02bd2bf29c47920b4/78612/4.png 1260w,
+/static/65d2f67c42ddc5c02bd2bf29c47920b4/5d6a0/4.png 1580w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Github Actionsでnpm ciがうまく通らなかった]]></title><description><![CDATA[原因は yarn で material ui のパッケージを入れたことだった は package-lock.json を参照し適切な node_modules を使えるようにするみたい した後は で package-lock.json…]]></description><link>https://hi1t0.com/20220304/</link><guid isPermaLink="false">https://hi1t0.com/20220304/</guid><pubDate>Fri, 04 Mar 2022 11:11:11 GMT</pubDate><content:encoded>&lt;p&gt;原因は yarn で material ui のパッケージを入れたことだった&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;$ npm ci&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;は package-lock.json を参照し適切な node_modules を使えるようにするみたい&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;$ yarn add @material&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;ui&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;core&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
