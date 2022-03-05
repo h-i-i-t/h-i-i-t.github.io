@@ -17,7 +17,7 @@ const Pagination = ({ pageContext }) => {
     const { numberOfPages, humanPageNumber } = pageContext
 
     const handleChange = (_event, value) => {
-        value === 1 ? navigate(`/`) : navigate(`/page/${value}`)
+        value === 1 ? navigate(`/page`) : navigate(`/page/${value}`)
     }
     return (
         <div className={classes.root}>
