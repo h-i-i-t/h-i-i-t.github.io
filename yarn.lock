@@ -1711,7 +1711,7 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@material-ui/core@^4.0.0", "@material-ui/core@^4.12.3":
+"@material-ui/core@^4.0.0", "@material-ui/core@^4.12.1", "@material-ui/core@^4.12.3":
   "integrity" "sha512-sdpgI/PL56QVsEJldwEe4FFaFTLUqN+rd7sSZiRCdx2E/C7z5yK0y/khAWVBH24tXwto7I1hCzNWfJGZIYJKnw=="
   "resolved" "https://registry.npmjs.org/@material-ui/core/-/core-4.12.3.tgz"
   "version" "4.12.3"
@@ -1735,6 +1735,17 @@
   "version" "4.11.2"
   dependencies:
     "@babel/runtime" "^7.4.4"
+
+"@material-ui/lab@^4.0.0-alpha.60":
+  "integrity" "sha512-fadlYsPJF+0fx2lRuyqAuJj7hAS1tLDdIEEdov5jlrpb5pp4b+mRDUqQTUxi4inRZHS1bEXpU8QWUhO6xX88aA=="
+  "resolved" "https://registry.npmjs.org/@material-ui/lab/-/lab-4.0.0-alpha.60.tgz"
+  "version" "4.0.0-alpha.60"
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+    "@material-ui/utils" "^4.11.2"
+    "clsx" "^1.0.4"
+    "prop-types" "^15.7.2"
+    "react-is" "^16.8.0 || ^17.0.0"
 
 "@material-ui/styles@^4.11.4":
   "integrity" "sha512-KNTIZcnj/zprG5LW0Sao7zw+yG3O35pviHzejMdcSGCdWbiO8qzRgOYL8JAxAsWBKOKYwVZxXtHWaB5T2Kvxew=="
@@ -5289,6 +5300,13 @@
   "resolved" "https://registry.npmjs.org/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz"
   "version" "1.0.1"
 
+"gatsby-awesome-pagination@^0.3.8":
+  "integrity" "sha512-Bnf2rncqjyhQeye8w+OVK8wmgu/Y77HI8Po05oEqbCSd+fMd0uGDv6ZhKH7UU/xcTv2cbJm7ie+Px9t41ngAxg=="
+  "resolved" "https://registry.npmjs.org/gatsby-awesome-pagination/-/gatsby-awesome-pagination-0.3.8.tgz"
+  "version" "0.3.8"
+  dependencies:
+    "lodash" "^4.17.21"
+
 "gatsby-cli@^4.8.1":
   "integrity" "sha512-F72TiIdc767JauncyNgX7JBvV3AZwuEoAriwvJQClPvTB1RXQXmgrDH5Wvv5eeqo8KDCu+6A8veQmqcOn/IoPg=="
   "resolved" "https://registry.npmjs.org/gatsby-cli/-/gatsby-cli-4.8.1.tgz"
@@ -5737,7 +5755,7 @@
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-"gatsby@^3.0.0", "gatsby@^4.0.0-next", "gatsby@^4.8.0":
+"gatsby@^3.0.0", "gatsby@^4.0.0-next", "gatsby@^4.8.0", "gatsby@>=2.0.0":
   "integrity" "sha512-xV+LROn1lwSHgHXMbHjdX/r3bzvFBkNSX8gYXg+nvnmoBgVQnLlCX823OiOSJpVYPrJj0u8qg14hLJd+P2Cong=="
   "resolved" "https://registry.npmjs.org/gatsby/-/gatsby-4.8.1.tgz"
   "version" "4.8.1"
@@ -9624,15 +9642,10 @@
     "react-fast-compare" "^3.1.1"
     "react-side-effect" "^2.1.0"
 
-"react-is@^16.13.1", "react-is@^16.7.0":
+"react-is@^16.13.1", "react-is@^16.7.0", "react-is@^16.8.0 || ^17.0.0":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
-
-"react-is@^16.8.0 || ^17.0.0":
-  "integrity" "sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w=="
-  "resolved" "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"
-  "version" "17.0.2"
 
 "react-lifecycles-compat@^3.0.4":
   "integrity" "sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA=="
@@ -9659,7 +9672,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@^16.3.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^16.9.0 || ^17.0.0", "react@^17.0.1", "react@>=16.3.0", "react@>=16.6.0", "react@>=16.8.0", "react@15.x || 16.x || 17.x", "react@17.0.2":
+"react@^16.3.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^16.9.0 || ^17.0.0", "react@^17.0.1", "react@>=16.0.0", "react@>=16.3.0", "react@>=16.6.0", "react@>=16.8.0", "react@15.x || 16.x || 17.x", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
