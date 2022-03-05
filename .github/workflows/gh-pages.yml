@@ -36,7 +36,7 @@ jobs:
           GOOGLE_ANALYTICS_TRACKING_ID: ${{ secrets.GOOGLE_ANALYTICS_TRACKING_ID }}
           NODE_ENV: "production"
 
-      - run: echo \"hi1t0.com\" > public/CNAME
+      - run: echo hi1t0.com > public/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
