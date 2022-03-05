@@ -1,7 +1,22 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { makeStyles } from "@material-ui/core"
+
+const useStyles = makeStyles({
+    header: {
+      marginLeft: `32px`,
+      fontSize: `1.3em`,
+      fontWeight: `bold`,
+      textDecoration: `none`,
+        // display: `flex`,
+        // flexWrap: `wrap`,
+        // justifyContent: `center`,
+        // alignItems: "center",
+    },
+});
 
 const Layout = ({ location, title, children }) => {
+  const classes = useStyles()
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
@@ -14,9 +29,14 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
+      <div>
+        <Link className="header-link-home" to="/page">
+          {title}
+        </Link>
+        <Link className={classes.header} to="/">
+          {`home`}
+        </Link>
+      </div>
     )
   }
 
