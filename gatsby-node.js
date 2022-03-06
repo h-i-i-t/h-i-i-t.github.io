@@ -6,8 +6,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   // Define a template for blog post
-  const blogPost = path.resolve(`./src/templates/blog-post.js`) // ブログ詳細
-  const blogList = path.resolve(`./src/templates/blog-list.js`) // ブログ一覧
+  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const blogList = path.resolve(`./src/templates/blog-list.js`)
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
@@ -58,15 +58,33 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
 
+    // // Create blog-list pages
+    // // const posts = result.data.allMarkdownRemark.edges
+    // const postsPerPage = 3
+    // const numPages = Math.ceil(posts.length / postsPerPage)
+
+    // Array.from({ numPages }).forEach((_, i) => {
+    //   createPage({
+    //     path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+    //     component: blogList,
+    //     context: {
+    //       limit: postsPerPage,
+    //       skip: i * postsPerPage,
+    //       numPages,
+    //       currentPage: i + 1,
+    //     },
+    //   })
+    // })
+
     // Create your paginated pages
     paginate({
       createPage,
       items: posts,
-      itemsPerPage: 5,
-      // pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? "/page" : "/page"),
-      pathPrefix: `/page`,
+      itemsPerPage: 6,
+      pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? "/page" : "/page"),
       component: blogList
     })
+
   }
 }
 

@@ -5,6 +5,7 @@ import { makeStyles } from "@material-ui/core"
 const useStyles = makeStyles({
     header: {
       marginLeft: `32px`,
+      marginRight: `32px`,
       fontSize: `1.3em`,
       fontWeight: `bold`,
       textDecoration: `none`,
@@ -30,11 +31,11 @@ const Layout = ({ location, title, children }) => {
   } else {
     header = (
       <div>
-        <Link className="header-link-home" to="/page">
-          {title}
-        </Link>
         <Link className={classes.header} to="/">
           {`home`}
+        </Link>
+        <Link className="header-link-home" to="/page">
+          {`blog`}
         </Link>
       </div>
     )
