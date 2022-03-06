@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hi1t0 RSS Feed]]></title><description><![CDATA[日々学んだことなどを書き溜めていく。主にjavascript、react、html、css、firebase、flutter、githubなどweb制作のものが多くなると思います]]></description><link>https://hi1t0.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 06 Mar 2022 03:11:09 GMT</lastBuildDate><item><title><![CDATA[.envがGithub Actionsで使えない]]></title><description><![CDATA[Gatsby の公式サイトを見るとでプロジェクトを立ち上げると変数は.env.development、の時は.env.production が適応される
-Environment Variables gatsby-config.js で使用する場合、先頭に以下の文を含める src…]]></description><link>https://hi1t0.com/20220306/</link><guid isPermaLink="false">https://hi1t0.com/20220306/</guid><pubDate>Sun, 06 Mar 2022 11:11:11 GMT</pubDate><content:encoded>&lt;p&gt;Gatsby の公式サイトを見ると&lt;code class=&quot;language-text&quot;&gt;gatsby develop&lt;/code&gt;でプロジェクトを立ち上げると変数は.env.development、&lt;code class=&quot;language-text&quot;&gt;gatsby build&lt;/code&gt;の時は.env.production が適応される
-&lt;a href=&quot;https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/&quot;&gt;Environment Variables&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hi1t0 RSS Feed]]></title><description><![CDATA[日々学んだことなどを書き溜めていく。主にjavascript、react、html、css、firebase、flutter、githubなどweb制作のものが多くなると思います]]></description><link>https://hi1t0.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 06 Mar 2022 15:12:04 GMT</lastBuildDate><item><title><![CDATA[.envがGithub Actionsで使えない]]></title><description><![CDATA[Gatsby の公式サイトを見るとでプロジェクトを立ち上げると変数は.env.development、の時は.env.production が適応される Environment Variables gatsby-config.js で使用する場合、先頭に以下の文を含める src…]]></description><link>https://hi1t0.com/20220306/</link><guid isPermaLink="false">https://hi1t0.com/20220306/</guid><pubDate>Sun, 06 Mar 2022 11:11:11 GMT</pubDate><content:encoded>&lt;p&gt;Gatsby の公式サイトを見ると&lt;code class=&quot;language-text&quot;&gt;gatsby develop&lt;/code&gt;でプロジェクトを立ち上げると変数は.env.development、&lt;code class=&quot;language-text&quot;&gt;gatsby build&lt;/code&gt;の時は.env.production が適応される&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/&quot;&gt;Environment Variables&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;gatsby-config.js で使用する場合、先頭に以下の文を含める&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;dotenv&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token literal-property property&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;.env.&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;process&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;env&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;NODE_ENV&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
@@ -10,8 +9,7 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
   &lt;span class=&quot;token literal-property property&quot;&gt;siteMetadata&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
       &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;src フォルダ以下の js ファイルでは&lt;code class=&quot;language-text&quot;&gt;require(&quot;dotenv&quot;)&lt;/code&gt;をする必要はない&lt;/p&gt;
-&lt;p&gt;デフォルトでは、環境変数は Node.js コードでのみ使用可能であり、ブラウザーでは使用できません。一部の変数は秘密にして、サイトにアクセスする人に公開しないようにする必要があるため&lt;/p&gt;
-&lt;p&gt;ブラウザで変数を公開するには、その名前の前に GATSBY_を付ける必要があります。 したがって、&lt;/p&gt;
+&lt;p&gt;デフォルトでは、環境変数は Node.js コードでのみ使用可能であり、ブラウザーでは使用できません。一部の変数は秘密にして、サイトにアクセスする人に公開しないようにする必要があるためブラウザで変数を公開するには、その名前の前に GATSBY_を付ける必要があります。 したがって、&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token constant&quot;&gt;GOOGLE_ANALYTICS_TRACKING_ID&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;G-WVTLJLZHVS&quot;&lt;/span&gt;
 &lt;span class=&quot;token constant&quot;&gt;GATSBY_API_ENDPOINT&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://xxx.com&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;の場合
@@ -26,7 +24,7 @@ New repository secret をクリックして、変数のペアを入力する&lt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/7aca499c5dfffbd34b5dfc25550f9a45/42b11/1.png&quot;
+    href=&quot;/static/7aca499c5dfffbd34b5dfc25550f9a45/42b11/2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -39,13 +37,13 @@ New repository secret をクリックして、変数のペアを入力する&lt;
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;test&quot;
         title=&quot;test&quot;
-        src=&quot;/static/7aca499c5dfffbd34b5dfc25550f9a45/f058b/1.png&quot;
-        srcset=&quot;/static/7aca499c5dfffbd34b5dfc25550f9a45/c26ae/1.png 158w,
-/static/7aca499c5dfffbd34b5dfc25550f9a45/6bdcf/1.png 315w,
-/static/7aca499c5dfffbd34b5dfc25550f9a45/f058b/1.png 630w,
-/static/7aca499c5dfffbd34b5dfc25550f9a45/40601/1.png 945w,
-/static/7aca499c5dfffbd34b5dfc25550f9a45/78612/1.png 1260w,
-/static/7aca499c5dfffbd34b5dfc25550f9a45/42b11/1.png 2364w&quot;
+        src=&quot;/static/7aca499c5dfffbd34b5dfc25550f9a45/f058b/2.png&quot;
+        srcset=&quot;/static/7aca499c5dfffbd34b5dfc25550f9a45/c26ae/2.png 158w,
+/static/7aca499c5dfffbd34b5dfc25550f9a45/6bdcf/2.png 315w,
+/static/7aca499c5dfffbd34b5dfc25550f9a45/f058b/2.png 630w,
+/static/7aca499c5dfffbd34b5dfc25550f9a45/40601/2.png 945w,
+/static/7aca499c5dfffbd34b5dfc25550f9a45/78612/2.png 1260w,
+/static/7aca499c5dfffbd34b5dfc25550f9a45/42b11/2.png 2364w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -56,11 +54,11 @@ New repository secret をクリックして、変数のペアを入力する&lt;
 &lt;/div&gt;
 &lt;p&gt;登録した変数を使用する時は、&lt;code class=&quot;language-text&quot;&gt;${{ secrets.変数 }}&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;.github/workflows/gh-pages.yml を以下のように変更する&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  - name: Build
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;  - name: Build
     run: npm run build
     env:
       GOOGLE_ANALYTICS_TRACKING_ID: ${{ secrets.GOOGLE_ANALYTICS_TRACKING_ID }}
-      NODE_ENV: &quot;production&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      NODE_ENV: &amp;quot;production&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;これで&lt;code class=&quot;language-text&quot;&gt;process.env.GOOGLE_ANALYTICS_TRACKING_ID&lt;/code&gt;で変数の値にアクセスできるようになる&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/64109619/using-environment-variables-in-gatsby-site-deployed-on-github-pages&quot;&gt;Using environment variables in Gatsby site deployed on GitHub pages&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.raulmelo.dev/blog/cache-gatsby-github-actions&quot;&gt;Gatsby Incremental Builds and Github Actions&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Google AnalyticsとGoogle Search Consoleを登録する]]></title><description><![CDATA[Google 検索してもサイトが出てこないので調べてみたら、Google Search Console を登録すると検索結果の表示改善につながるということなので登録します  とその前段階でGoogle Analytics…]]></description><link>https://hi1t0.com/20220305/</link><guid isPermaLink="false">https://hi1t0.com/20220305/</guid><pubDate>Sat, 05 Mar 2022 11:11:11 GMT</pubDate><content:encoded>&lt;p&gt;Google 検索してもサイトが出てこないので調べてみたら、Google Search Console を登録すると検索結果の表示改善につながるということなので登録します&lt;/p&gt;
