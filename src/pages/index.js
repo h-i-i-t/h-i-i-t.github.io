@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import InsertCommentIcon from '@material-ui/icons/InsertComment';
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -27,7 +28,7 @@ const Index = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="hi1t0home" />
       <Bio />
-      <h3>最新記事</h3>
+      <h4>最新記事</h4>
       <hr />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
@@ -61,9 +62,8 @@ const Index = ({ data, location }) => {
           )
         })}
       </ol>
+      <InsertCommentIcon style={{ "padding-top": "2px", "font-size": "1.0em", color: "#09427B" }}/><Link to={"/page"}>すべての記事を見る</Link>
       <hr />
-
-      <h4>・<Link to={"/page"} style={{color: '#09427B'}}>ブログ記事一覧</Link></h4>
     </Layout>
   )
 }
