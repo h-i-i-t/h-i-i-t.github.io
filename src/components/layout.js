@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { makeStyles } from "@material-ui/core"
+import { makeStyles } from "@mui/styles"
 
 const useStyles = makeStyles({
     header: {
@@ -24,9 +24,17 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
+      <div>
+        {/* <h1 className="main-heading"> */}
+          <Link to="/">{title}</Link>
+        {/* </h1> */}
+        <Link className={classes.header} to="/page">
+          {`blog`}
+        </Link>
+        <Link className={classes.header} to="/tags">
+          {`tags`}
+        </Link>
+      </div>
     )
   } else {
     header = (
@@ -36,6 +44,9 @@ const Layout = ({ location, title, children }) => {
         </Link>
         <Link className="header-link-home" to="/page">
           {`blog`}
+        </Link>
+        <Link className={classes.header} to="/tags">
+          {`tags`}
         </Link>
       </div>
     )
