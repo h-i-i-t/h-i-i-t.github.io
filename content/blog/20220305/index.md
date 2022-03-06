@@ -1,6 +1,7 @@
 ---
 title: Google AnalyticsとGoogle Search Consoleを登録する
 date: "2022-03-05T11:11:11.110Z"
+tags: ["Google Analytics", "Google Search Console"]
 ---
 
 Google検索してもサイトが出てこないので調べてみたら、Google Search Consoleを登録すると検索結果の表示改善につながるということなので登録します

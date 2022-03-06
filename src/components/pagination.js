@@ -1,7 +1,7 @@
 import React from "react"
 import { navigate } from "gatsby"
-import { makeStyles } from "@material-ui/core"
-import * as muiLab from "@material-ui/lab"
+import { makeStyles } from "@mui/styles"
+import * as mui from "@mui/material"
 
 const useStyles = makeStyles({
     root: {
@@ -21,7 +21,7 @@ const Pagination = ({ pageContext }) => {
     }
     return (
         <div className={classes.root}>
-            <muiLab.Pagination
+            <mui.Pagination
                 variant="outlined"
                 defaultPage={humanPageNumber}
                 count={numberOfPages}

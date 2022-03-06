@@ -1,5 +1,5 @@
-import { createTheme, CssBaseline } from "@material-ui/core"
-import { ThemeProvider } from "@material-ui/styles"
+import { createTheme, CssBaseline } from "@mui/material"
+import { ThemeProvider } from "@mui/material"
 import React from "react"
 
 const MuiThemeProvider = ({ children }) => {

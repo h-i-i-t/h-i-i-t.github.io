@@ -1,4 +1,5 @@
 const path = require(`path`)
+const _ = require(`lodash`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const { paginate } = require(`gatsby-awesome-pagination`)
 
@@ -8,12 +9,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Define a template for blog post
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
   const blogList = path.resolve(`./src/templates/blog-list.js`)
+  const tagsAndBlogList = path.resolve("src/templates/tags-and-blog-list.js")
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
       {
-        allMarkdownRemark(
+        posts: allMarkdownRemark(
           sort: { fields: [frontmatter___date], order: ASC }
           limit: 1000
         ) {
@@ -22,6 +24,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             fields {
               slug
             }
+          }
+        }
+        tags: allMarkdownRemark(limit: 2000) {
+          group(field: frontmatter___tags) {
+            fieldValue
           }
         }
       }
@@ -36,7 +43,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
 
-  const posts = result.data.allMarkdownRemark.nodes
+  const posts = result.data.posts.nodes
+  const tags = result.data.tags.group
 
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
@@ -58,33 +66,38 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
 
-    // // Create blog-list pages
-    // // const posts = result.data.allMarkdownRemark.edges
-    // const postsPerPage = 3
-    // const numPages = Math.ceil(posts.length / postsPerPage)
-
-    // Array.from({ numPages }).forEach((_, i) => {
-    //   createPage({
-    //     path: i === 0 ? `/blog` : `/blog/${i + 1}`,
-    //     component: blogList,
-    //     context: {
-    //       limit: postsPerPage,
-    //       skip: i * postsPerPage,
-    //       numPages,
-    //       currentPage: i + 1,
-    //     },
-    //   })
-    // })
-
     // Create your paginated pages
     paginate({
       createPage,
       items: posts,
       itemsPerPage: 6,
       pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? "/page" : "/page"),
-      component: blogList
+      component: blogList,
+      // context: {
+      //   tags: tags,
+      // },
     })
 
+  }
+
+  /* tag */
+  createPage({
+    path: '/tags',
+    component: tagsAndBlogList,
+    context: { tag: "*" }
+  });
+
+  /* 同じtagのリストページ */
+  if (tags.length > 0) {
+    tags.forEach(tag => {
+      createPage({
+        path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+        component: tagsAndBlogList,
+        context: {
+          tag: tag.fieldValue,
+        },
+      })
+    })
   }
 }
 
