@@ -22,11 +22,11 @@ const Layout = ({ location, title, children }) => {
         <HLink to="/">
           {`hi1t0`}
         </HLink>
-        <HLink to="/page">
+        <HLink to="/blog">
           {`blog`}
         </HLink>
-        <HLink to="/tags">
-          {`tags`}
+        <HLink to="/tag">
+          {`tag`}
         </HLink>
       </div>
     )
@@ -36,11 +36,11 @@ const Layout = ({ location, title, children }) => {
         <HLink to="/">
           {`hi1t0`}
         </HLink>
-        <HLink to="/page">
+        <HLink to="/blog">
           {`blog`}
         </HLink>
-        <HLink to="/tags">
-          {`tags`}
+        <HLink to="/tag">
+          {`tag`}
         </HLink>
       </div>
     )
