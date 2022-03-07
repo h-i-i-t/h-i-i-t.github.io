@@ -1,19 +1,17 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { makeStyles } from "@mui/styles"
+import { styled } from "@mui/material/styles";
 
-const useStyles = makeStyles({
-    header: {
-      marginLeft: `32px`,
-      marginRight: `32px`,
-      fontSize: `1.3em`,
-      fontWeight: `bold`,
-      textDecoration: `none`,
-    },
+const HLink = styled(Link)({
+  marginLeft: `32px`,
+  marginRight: `32px`,
+  fontSize: `1.3em`,
+  fontWeight: `bold`,
+  textDecoration: `none`,
 });
 
 const Layout = ({ location, title, children }) => {
-  const classes = useStyles()
+  // const classes = useStyles()
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
@@ -21,29 +19,29 @@ const Layout = ({ location, title, children }) => {
   if (isRootPath) {
     header = (
       <div>
-        <Link className={classes.header} to="/">
+        <HLink to="/">
           {`hi1t0`}
-        </Link>
-        <Link className={classes.header} to="/page">
+        </HLink>
+        <HLink to="/page">
           {`blog`}
-        </Link>
-        <Link className={classes.header} to="/tags">
+        </HLink>
+        <HLink to="/tags">
           {`tags`}
-        </Link>
+        </HLink>
       </div>
     )
   } else {
     header = (
       <div>
-        <Link className={classes.header} to="/">
+        <HLink to="/">
           {`hi1t0`}
-        </Link>
-        <Link className={classes.header} to="/page">
+        </HLink>
+        <HLink to="/page">
           {`blog`}
-        </Link>
-        <Link className={classes.header} to="/tags">
+        </HLink>
+        <HLink to="/tags">
           {`tags`}
-        </Link>
+        </HLink>
       </div>
     )
   }
