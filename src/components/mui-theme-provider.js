@@ -1,11 +1,11 @@
-import { createTheme, CssBaseline } from "@mui/material"
-import { ThemeProvider } from "@mui/material"
+import { ThemeProvider, createTheme } from "@mui/material/styles"
+import { CssBaseline } from "@mui/material"
 import React from "react"
 
 const MuiThemeProvider = ({ children }) => {
   const theme = createTheme({
     palette: {
-      type: "light",
+      mode: "light",
       // primary: {
       //     main: '#fff',
       // },

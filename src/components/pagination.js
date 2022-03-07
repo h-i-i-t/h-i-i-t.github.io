@@ -1,26 +1,24 @@
 import React from "react"
 import { navigate } from "gatsby"
-import { makeStyles } from "@mui/styles"
+import { styled } from "@mui/material/styles";
 import * as mui from "@mui/material"
 
-const useStyles = makeStyles({
-    root: {
-        display: `flex`,
-        flexWrap: `wrap`,
-        justifyContent: `center`,
-        alignItems: "center",
-    },
+const PGRoot = styled("div")({
+    display: `flex`,
+    flexWrap: `wrap`,
+    justifyContent: `center`,
+    alignItems: `center`,
+
 });
 
 const Pagination = ({ pageContext }) => {
-    const classes = useStyles()
     const { numberOfPages, humanPageNumber } = pageContext
 
     const handleChange = (_event, value) => {
         value === 1 ? navigate(`/page`) : navigate(`/page/${value}`)
     }
     return (
-        <div className={classes.root}>
+        <PGRoot>
             <mui.Pagination
                 variant="outlined"
                 defaultPage={humanPageNumber}
@@ -30,7 +28,7 @@ const Pagination = ({ pageContext }) => {
                 color="primary"
                 shape="rounded"
             />
-        </div>
+        </PGRoot>
     )
 }
 export default Pagination
