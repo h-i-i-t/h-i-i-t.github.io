@@ -28,8 +28,8 @@ const BlogListTemplate = ({ data, location, pageContext }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="hi1t0BlogList" />
-      <h4>記事一覧</h4>
       <hr />
+      <h4 style={{marginTop: "24px", marginBottom: "48px"}}>記事一覧</h4>
       <Blogs posts={posts} />
       <footer>
         <Pagination pageContext={pageContext} />

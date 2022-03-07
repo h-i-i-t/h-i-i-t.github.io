@@ -29,8 +29,8 @@ const Index = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="hi1t0Index" />
       <Bio />
-      <h4>最新記事</h4>
       <hr />
+      <h4 style={{marginTop: "24px", marginBottom: "48px"}}>最新記事</h4>
       <Blogs posts={posts} />
       <InsertCommentIcon style={{ "paddingTop": "2px", "fontSize": "1.0em", color: "#09427B" }}/><Link to={"/page"}>すべての記事を見る</Link>
       <hr />
