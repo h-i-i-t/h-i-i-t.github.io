@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hi1t0 RSS Feed]]></title><description><![CDATA[日々学んだことなどを書き溜めていく。主にjavascript、react、html、css、firebase、flutter、githubなどweb制作のものが多くなると思います]]></description><link>https://hi1t0.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 07 Mar 2022 10:08:56 GMT</lastBuildDate><item><title><![CDATA[お名前.comで取得したドメインをGithub Pagesで使おうとしたらエラー出た。そしてhttps化させる]]></title><description><![CDATA[お名前.com でドメインを取得し、 GitHub Pages に独自ドメインを設定する方法 こちらを参考に DNS レコードの設定をしました  Github Pages でカスタムドメインを入力し Save…]]></description><link>https://hi1t0.com/20220307/</link><guid isPermaLink="false">https://hi1t0.com/20220307/</guid><pubDate>Mon, 07 Mar 2022 11:11:11 GMT</pubDate><content:encoded>&lt;p&gt;お名前.com でドメインを取得し、&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hi1t0 RSS Feed]]></title><description><![CDATA[日々学んだことなどを書き溜めていく。主にjavascript、react、html、css、firebase、flutter、githubなどweb制作のものが多くなると思います]]></description><link>https://hi1t0.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 07 Mar 2022 15:27:22 GMT</lastBuildDate><item><title><![CDATA[お名前.comで取得したドメインをGithub Pagesで使おうとしたらエラー出た。そしてhttps化させる]]></title><description><![CDATA[お名前.com でドメインを取得し、 GitHub Pages に独自ドメインを設定する方法 こちらを参考に DNS レコードの設定をしました  Github Pages でカスタムドメインを入力し Save…]]></description><link>https://hi1t0.com/20220307/</link><guid isPermaLink="false">https://hi1t0.com/20220307/</guid><pubDate>Mon, 07 Mar 2022 11:11:11 GMT</pubDate><content:encoded>&lt;p&gt;お名前.com でドメインを取得し、&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://zenn.dev/donchan922/articles/59c54fe659128294bb65&quot;&gt;GitHub Pages に独自ドメインを設定する方法&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;こちらを参考に DNS レコードの設定をしました&lt;/p&gt;
 &lt;div style=&quot;width: 100%; margin-left: auto; margin-right: auto&quot;&gt;
@@ -19,8 +19,8 @@
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;test&quot;
-        title=&quot;test&quot;
+        alt=&quot;test1&quot;
+        title=&quot;test1&quot;
         src=&quot;/static/bdc91f06263ea65abce10a03cea7636b/f058b/1.png&quot;
         srcset=&quot;/static/bdc91f06263ea65abce10a03cea7636b/c26ae/1.png 158w,
 /static/bdc91f06263ea65abce10a03cea7636b/6bdcf/1.png 315w,
@@ -55,8 +55,8 @@
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;test&quot;
-        title=&quot;test&quot;
+        alt=&quot;test2&quot;
+        title=&quot;test2&quot;
         src=&quot;/static/e780f29835c6b12892ad6e65a4ef0854/f058b/2.png&quot;
         srcset=&quot;/static/e780f29835c6b12892ad6e65a4ef0854/c26ae/2.png 158w,
 /static/e780f29835c6b12892ad6e65a4ef0854/6bdcf/2.png 315w,
@@ -100,8 +100,8 @@
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;test&quot;
-        title=&quot;test&quot;
+        alt=&quot;test3&quot;
+        title=&quot;test3&quot;
         src=&quot;/static/2ab4c8d9868dd9f1d185efdcaee39aa3/5aae9/3.png&quot;
         srcset=&quot;/static/2ab4c8d9868dd9f1d185efdcaee39aa3/c26ae/3.png 158w,
 /static/2ab4c8d9868dd9f1d185efdcaee39aa3/6bdcf/3.png 315w,
@@ -132,8 +132,8 @@
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;test&quot;
-        title=&quot;test&quot;
+        alt=&quot;test4&quot;
+        title=&quot;test4&quot;
         src=&quot;/static/ae2423d81165c81a35722f11bf27c1b1/07484/4.png&quot;
         srcset=&quot;/static/ae2423d81165c81a35722f11bf27c1b1/c26ae/4.png 158w,
 /static/ae2423d81165c81a35722f11bf27c1b1/6bdcf/4.png 315w,
@@ -165,8 +165,8 @@
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;test&quot;
-        title=&quot;test&quot;
+        alt=&quot;test5&quot;
+        title=&quot;test5&quot;
         src=&quot;/static/2d7d73e25e75440e971acbfb250d9e7a/f058b/5.png&quot;
         srcset=&quot;/static/2d7d73e25e75440e971acbfb250d9e7a/c26ae/5.png 158w,
 /static/2d7d73e25e75440e971acbfb250d9e7a/6bdcf/5.png 315w,
@@ -203,8 +203,8 @@
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;test&quot;
-        title=&quot;test&quot;
+        alt=&quot;test6&quot;
+        title=&quot;test6&quot;
         src=&quot;/static/64f1c9eb0a24f04e6c7467397c146928/f058b/6.png&quot;
         srcset=&quot;/static/64f1c9eb0a24f04e6c7467397c146928/c26ae/6.png 158w,
 /static/64f1c9eb0a24f04e6c7467397c146928/6bdcf/6.png 315w,
@@ -247,8 +247,8 @@
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;test&quot;
-        title=&quot;test&quot;
+        alt=&quot;test7&quot;
+        title=&quot;test7&quot;
         src=&quot;/static/08b4356c6c95d08aa0ab352a4d3fd0d4/f058b/7.png&quot;
         srcset=&quot;/static/08b4356c6c95d08aa0ab352a4d3fd0d4/c26ae/7.png 158w,
 /static/08b4356c6c95d08aa0ab352a4d3fd0d4/6bdcf/7.png 315w,
@@ -504,12 +504,12 @@ New repository secret をクリックして、変数のペアを入力する&lt;
 &lt;p&gt;で package-lock.json を最新にしないといけない&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;npm ci&lt;/code&gt;を使う場面があるなら、パッケージを入れたら、&lt;code class=&quot;language-text&quot;&gt;npm install&lt;/code&gt;又は&lt;code class=&quot;language-text&quot;&gt;npm update&lt;/code&gt;を実行し&lt;code class=&quot;language-text&quot;&gt;papckage-lock.json&lt;/code&gt;を更新しておく&lt;/p&gt;</content:encoded></item><item><title><![CDATA[VSCodeでMarkdownを書く時に知るべきこと]]></title><description><![CDATA[環境 MacOS 11.5.2 VSCode 1.64.2 画像表示  または  今回の場合同じディレクトリに画像と markdown ファイルがある 
 とすると以下のように表示される
- 画像のサイズを変更したい場合  のように width…]]></description><link>https://hi1t0.com/20220303/</link><guid isPermaLink="false">https://hi1t0.com/20220303/</guid><pubDate>Thu, 03 Mar 2022 22:44:44 GMT</pubDate><content:encoded>&lt;h4&gt;環境&lt;/h4&gt;
+ 画像のサイズを変更したい場合  のように width…]]></description><link>https://hi1t0.com/20220303/</link><guid isPermaLink="false">https://hi1t0.com/20220303/</guid><pubDate>Thu, 03 Mar 2022 22:44:44 GMT</pubDate><content:encoded>&lt;h4 id=&quot;環境&quot;&gt;環境&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;MacOS 11.5.2&lt;/li&gt;
 &lt;li&gt;VSCode 1.64.2&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;画像表示&lt;/h4&gt;
+&lt;h4 id=&quot;画像表示&quot;&gt;画像表示&lt;/h4&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;![画像表示不可時テキスト](/path/to/画像)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;または&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;img src=&quot;/path/to/画像&quot; alt=&quot;画像表示不可時テキスト&quot;&gt;&lt;/code&gt;&lt;/p&gt;
@@ -601,7 +601,7 @@ New repository secret をクリックして、変数のペアを入力する&lt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;h4&gt;プレビュー表示&lt;/h4&gt;
+&lt;h4 id=&quot;プレビュー表示&quot;&gt;プレビュー表示&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;shift + command + p&lt;/li&gt;
 &lt;li&gt;検索欄に markdown&lt;/li&gt;
@@ -673,7 +673,7 @@ New repository secret をクリックして、変数のペアを入力する&lt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;又は、ショートカットキー command + k, v で表示&lt;/p&gt;
-&lt;h4&gt;拡張機能を入れる&lt;/h4&gt;
+&lt;h4 id=&quot;拡張機能を入れる&quot;&gt;拡張機能を入れる&lt;/h4&gt;
 &lt;p&gt;VSCode で markdown を書く時に便利な拡張機能&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -797,7 +797,7 @@ Consonantia, there live the blind texts. Separated they live in…]]></descripti
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
 Duden flows by their place and supplies it with the necessary regelialia.&lt;/p&gt;
-&lt;h2&gt;On deer horse aboard tritely yikes and much&lt;/h2&gt;
+&lt;h2 id=&quot;on-deer-horse-aboard-tritely-yikes-and-much&quot;&gt;On deer horse aboard tritely yikes and much&lt;/h2&gt;
 &lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
 Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
 didn’t listen. She packed her seven versalia, put her initial into the belt and
@@ -816,7 +816,7 @@ view back on the skyline of her hometown &lt;em&gt;Bookmarksgrove&lt;/em&gt;, th
 &lt;a href=&quot;http://google.com&quot;&gt;Alphabet Village&lt;/a&gt; and the subline of her own road, the Line
 Lane. Pityful a rhetoric question ran over her cheek, then she continued her
 way. On her way she met a copy.&lt;/p&gt;
-&lt;h3&gt;Overlaid the jeepers uselessly much excluding&lt;/h3&gt;
+&lt;h3 id=&quot;overlaid-the-jeepers-uselessly-much-excluding&quot;&gt;Overlaid the jeepers uselessly much excluding&lt;/h3&gt;
 &lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
 few insidious Copy Writers ambushed her, made her drunk with
 &lt;a href=&quot;http://google.com&quot;&gt;Longe and Parole&lt;/a&gt; and dragged her into their agency, where
@@ -831,7 +831,7 @@ right at the coast of the Semantics, a large language ocean.&lt;/p&gt;
 mouth. Even the all-powerful Pointing has no control about the blind texts it is
 an almost unorthographic life One day however a small line of blind text by the
 name of Lorem Ipsum decided to leave for the far World of Grammar.&lt;/p&gt;
-&lt;h3&gt;According a funnily until pre-set or arrogant well cheerful&lt;/h3&gt;
+&lt;h3 id=&quot;according-a-funnily-until-pre-set-or-arrogant-well-cheerful&quot;&gt;According a funnily until pre-set or arrogant well cheerful&lt;/h3&gt;
 &lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
 Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
 didn’t listen. She packed her seven versalia, put her initial into the belt and
@@ -860,7 +860,7 @@ and dragged her into their agency, where they abused her for their projects
 again and again. And if she hasn’t been rewritten, then they are still using
 her. Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts.&lt;/p&gt;
-&lt;h4&gt;Silent delightfully including because before one up barring chameleon&lt;/h4&gt;
+&lt;h4 id=&quot;silent-delightfully-including-because-before-one-up-barring-chameleon&quot;&gt;Silent delightfully including because before one up barring chameleon&lt;/h4&gt;
 &lt;p&gt;Separated they live in Bookmarksgrove right at the coast of the Semantics, a
 large language ocean. A small river named Duden flows by their place and
 supplies it with the necessary regelialia. It is a paradisematic country, in
@@ -870,14 +870,14 @@ almost unorthographic life One day however a small line of blind text by the
 name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox
 advised her not to do so, because there were thousands of bad Commas, wild
 Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.&lt;/p&gt;
-&lt;h5&gt;Wherever far wow thus a squirrel raccoon jeez jaguar this from along&lt;/h5&gt;
+&lt;h5 id=&quot;wherever-far-wow-thus-a-squirrel-raccoon-jeez-jaguar-this-from-along&quot;&gt;Wherever far wow thus a squirrel raccoon jeez jaguar this from along&lt;/h5&gt;
 &lt;p&gt;She packed her seven versalia, put her initial into the belt and made herself on
 the way. When she reached the first hills of the Italic Mountains, she had a
 last view back on the skyline of her hometown Bookmarksgrove, the headline of
 Alphabet Village and the subline of her own road, the Line Lane. Pityful a
 rhetoric question ran over her cheek, then she continued her way. On her way she
 met a copy.&lt;/p&gt;
-&lt;h6&gt;Slapped cozy a that lightheartedly and far&lt;/h6&gt;
+&lt;h6 id=&quot;slapped-cozy-a-that-lightheartedly-and-far&quot;&gt;Slapped cozy a that lightheartedly and far&lt;/h6&gt;
 &lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
 been rewritten a thousand times and everything that was left from its origin
 would be the word “and” and the Little Blind Text should turn around and return
@@ -967,31 +967,31 @@ firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md&quot;&gt;View raw (TEST.md)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This is a paragraph.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;This is a paragraph.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;Header 1&lt;/h1&gt;
-&lt;h2&gt;Header 2&lt;/h2&gt;
+&lt;h1 id=&quot;header-1&quot;&gt;Header 1&lt;/h1&gt;
+&lt;h2 id=&quot;header-2&quot;&gt;Header 2&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Header 1
 ========
 
 Header 2
 --------&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;Header 1&lt;/h1&gt;
-&lt;h2&gt;Header 2&lt;/h2&gt;
-&lt;h3&gt;Header 3&lt;/h3&gt;
-&lt;h4&gt;Header 4&lt;/h4&gt;
-&lt;h5&gt;Header 5&lt;/h5&gt;
-&lt;h6&gt;Header 6&lt;/h6&gt;
+&lt;h1 id=&quot;header-1-1&quot;&gt;Header 1&lt;/h1&gt;
+&lt;h2 id=&quot;header-2-1&quot;&gt;Header 2&lt;/h2&gt;
+&lt;h3 id=&quot;header-3&quot;&gt;Header 3&lt;/h3&gt;
+&lt;h4 id=&quot;header-4&quot;&gt;Header 4&lt;/h4&gt;
+&lt;h5 id=&quot;header-5&quot;&gt;Header 5&lt;/h5&gt;
+&lt;h6 id=&quot;header-6&quot;&gt;Header 6&lt;/h6&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Header 1
 ## Header 2
 ### Header 3
 #### Header 4
 ##### Header 5
 ###### Header 6&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;Header 1&lt;/h1&gt;
-&lt;h2&gt;Header 2&lt;/h2&gt;
-&lt;h3&gt;Header 3&lt;/h3&gt;
-&lt;h4&gt;Header 4&lt;/h4&gt;
-&lt;h5&gt;Header 5&lt;/h5&gt;
-&lt;h6&gt;Header 6&lt;/h6&gt;
+&lt;h1 id=&quot;header-1-2&quot;&gt;Header 1&lt;/h1&gt;
+&lt;h2 id=&quot;header-2-2&quot;&gt;Header 2&lt;/h2&gt;
+&lt;h3 id=&quot;header-3-1&quot;&gt;Header 3&lt;/h3&gt;
+&lt;h4 id=&quot;header-4-1&quot;&gt;Header 4&lt;/h4&gt;
+&lt;h5 id=&quot;header-5-1&quot;&gt;Header 5&lt;/h5&gt;
+&lt;h6 id=&quot;header-6-1&quot;&gt;Header 6&lt;/h6&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;# Header 1 #
 ## Header 2 ##
 ### Header 3 ###
@@ -1003,7 +1003,7 @@ Header 2
 &lt;/blockquote&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&gt; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;blockquote&gt;
-&lt;h2&gt;This is a header.&lt;/h2&gt;
+&lt;h2 id=&quot;this-is-a-header&quot;&gt;This is a header.&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;This is the first list item.&lt;/li&gt;
 &lt;li&gt;This is the second list item.&lt;/li&gt;
