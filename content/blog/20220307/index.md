@@ -12,7 +12,7 @@ tags: ["Github Pages", "tips", "お名前.com"]
 
 <div style="width: 100%; margin-left: auto; margin-right: auto">
 
-![test](1.png)
+![test1](1.png)
 
 </div>
 
@@ -20,7 +20,7 @@ Github Pagesでカスタムドメインを入力しSaveを押すとエラーに�
 
 <div style="width: 100%; margin-left: auto; margin-right: auto">
 
-![test](2.png)
+![test2](2.png)
 
 </div>
 
@@ -45,13 +45,13 @@ Github Pagesでカスタムドメインを入力しSaveを押すとエラーに�
 
 <div style="width: 80%; margin-left: auto; margin-right: auto">
 
-![test](3.png)
+![test3](3.png)
 
 </div>
 
 <div style="width: 80%; margin-left: auto; margin-right: auto">
 
-![test](4.png)
+![test4](4.png)
 
 </div>
 
@@ -59,7 +59,7 @@ Github Pagesの方も普通に通りました
 
 <div style="width: 100%; margin-left: auto; margin-right: auto">
 
-![test](5.png)
+![test5](5.png)
 
 </div>
 
@@ -71,7 +71,7 @@ https化できてない...
 
 <div style="width: 100%; margin-left: auto; margin-right: auto">
 
-![test](6.png)
+![test6](6.png)
 
 </div>
 
@@ -95,7 +95,7 @@ Enforce HTTPSのチェックボックスが押せない。。。
 
 <div style="width: 100%; margin-left: auto; margin-right: auto">
 
-![test](7.png)
+![test7](7.png)
 
 </div>
 

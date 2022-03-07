@@ -5651,6 +5651,17 @@
     "@babel/runtime" "^7.15.4"
     "prop-types" "^15.7.2"
 
+"gatsby-remark-autolink-headers@^5.9.0":
+  "integrity" "sha512-LLR4kWpg9U4XW/eHhT/7J8nNByKQPcjuKj5oKAmoQUww4pEBkV5X4PU5tOvaqZrhNuyMHfc0YV922DnBKCPCjQ=="
+  "resolved" "https://registry.npmjs.org/gatsby-remark-autolink-headers/-/gatsby-remark-autolink-headers-5.9.0.tgz"
+  "version" "5.9.0"
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "github-slugger" "^1.3.0"
+    "lodash" "^4.17.21"
+    "mdast-util-to-string" "^2.0.0"
+    "unist-util-visit" "^2.0.3"
+
 "gatsby-remark-copy-linked-files@^5.8.0":
   "integrity" "sha512-Xy4dDt+m6pzmYedEXNu3jkJ8PnT1yQ3QcMazyhmUDtGJ1k9PLIweQhcKcxoEwgMNBSlwTlQTqibADAu1eDhEVw=="
   "resolved" "https://registry.npmjs.org/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-5.8.0.tgz"
@@ -6061,7 +6072,7 @@
   "resolved" "https://registry.npmjs.org/github-from-package/-/github-from-package-0.0.0.tgz"
   "version" "0.0.0"
 
-"github-slugger@^1.2.1":
+"github-slugger@^1.2.1", "github-slugger@^1.3.0":
   "integrity" "sha512-w0dzqw/nt51xMVmlaV1+JRzN+oCa1KfcgGEWhxUG16wbdA+Xnt/yoFO8Z8x/V82ZcZ0wy6ln9QDup5avbhiDhQ=="
   "resolved" "https://registry.npmjs.org/github-slugger/-/github-slugger-1.4.0.tgz"
   "version" "1.4.0"
