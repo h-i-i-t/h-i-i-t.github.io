@@ -28,11 +28,14 @@ const BlogListTemplate = ({ data, location, pageContext }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="hi1t0BlogList" />
-      <Bio />
+      <h4>記事一覧</h4>
+      <hr />
       <Blogs posts={posts} />
       <footer>
         <Pagination pageContext={pageContext} />
       </footer>
+      <hr />
+      <Bio />
     </Layout>
   )
 }

@@ -47,7 +47,7 @@ New repository secretをクリックして、変数のペアを入力する
 
 .github/workflows/gh-pages.ymlを以下のように変更する
 
-```sh
+```bash
   - name: Build
     run: npm run build
     env:

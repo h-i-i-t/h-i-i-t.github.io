@@ -22,24 +22,13 @@ const TagsAndBlogListTemplate = ({ data, location, pageContext }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="TagList" />
-      <Bio />
+      <Seo title="hi1t0Tags" />
+      <h4>{pageContext.tag === '*' ? 'タグ一覧' : pageContext.tag}</h4>
+      <hr />
       <Tags tags={tags} selectedTag={pageContext.tag}/>
       <Blogs posts={uniquePosts} />
-      {/* <ul>
-        {
-          uniquePosts.map((node) => {
-            const { slug } = node.fields
-            const { title } = node.frontmatter
-            return (
-              <li key={slug}>
-                <Link to={slug}>{title}</Link>
-              </li>
-            )
-          })
-        }
-      </ul> */}
-      {/* <TagIcon style={{ "paddingTop": "2px", "fontSize": "1.0em", color: "#09427B" }} /><Link to="/tags">All tags</Link> */}
+      <hr />
+      <Bio />
     </Layout>
   )
 }

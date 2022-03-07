@@ -9,10 +9,6 @@ const useStyles = makeStyles({
       fontSize: `1.3em`,
       fontWeight: `bold`,
       textDecoration: `none`,
-        // display: `flex`,
-        // flexWrap: `wrap`,
-        // justifyContent: `center`,
-        // alignItems: "center",
     },
 });
 
@@ -25,9 +21,9 @@ const Layout = ({ location, title, children }) => {
   if (isRootPath) {
     header = (
       <div>
-        {/* <h1 className="main-heading"> */}
-          <Link to="/">{title}</Link>
-        {/* </h1> */}
+        <Link className={classes.header} to="/">
+          {`hi1t0`}
+        </Link>
         <Link className={classes.header} to="/page">
           {`blog`}
         </Link>
@@ -40,9 +36,9 @@ const Layout = ({ location, title, children }) => {
     header = (
       <div>
         <Link className={classes.header} to="/">
-          {`home`}
+          {`hi1t0`}
         </Link>
-        <Link className="header-link-home" to="/page">
+        <Link className={classes.header} to="/page">
           {`blog`}
         </Link>
         <Link className={classes.header} to="/tags">
