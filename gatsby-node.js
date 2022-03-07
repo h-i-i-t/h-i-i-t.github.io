@@ -71,7 +71,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       createPage,
       items: posts,
       itemsPerPage: 6,
-      pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? "/page" : "/page"),
+      pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? "/blog" : "/blog"),
       component: blogList,
       // context: {
       //   tags: tags,
@@ -82,7 +82,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   /* tag */
   createPage({
-    path: '/tags',
+    path: '/tag',
     component: tagsAndBlogList,
     context: { tag: "*" }
   });
@@ -91,7 +91,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   if (tags.length > 0) {
     tags.forEach(tag => {
       createPage({
-        path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+        path: `/tag/${_.kebabCase(tag.fieldValue)}/`,
         component: tagsAndBlogList,
         context: {
           tag: tag.fieldValue,
