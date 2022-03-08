@@ -2,6 +2,8 @@
 title: .envがGithub Actionsで使えない
 date: "2022-03-06T11:11:11.110Z"
 tags: ["Github", ".env", "Gatsby"]
+hero: "./2.png"
+type: "blog"
 ---
 
 Gatsbyの公式サイトを見ると`gatsby develop`でプロジェクトを立ち上げると変数は.env.development、`gatsby build`の時は.env.productionが適応される

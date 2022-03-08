@@ -2,6 +2,7 @@
 title: Github Actionsでnpm ciがうまく通らなかった
 date: "2022-03-04T11:11:11.111Z"
 tags: ["Github", "command"]
+type: "blog"
 ---
 
 原因はyarnでmaterial uiのパッケージを入れたことだった

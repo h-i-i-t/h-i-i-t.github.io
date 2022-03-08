@@ -26,7 +26,7 @@ const Layout = ({ location, title, children }) => {
           {`blog`}
         </HLink>
         <HLink to={`/${process.env.GATSBY_ROUTE_TAG}`}>
-          {`tags`}
+          {`tag`}
         </HLink>
       </div>
     )
@@ -40,7 +40,7 @@ const Layout = ({ location, title, children }) => {
           {`blog`}
         </HLink>
         <HLink to={`/${process.env.GATSBY_ROUTE_TAG}`}>
-          {`tags`}
+          {`tag`}
         </HLink>
       </div>
     )
