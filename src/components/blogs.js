@@ -19,7 +19,7 @@ const Blogs = ({ posts }) => {
             >
             <header>
                 <h2>
-                <Link to={post.fields.slug} itemProp="url">
+                <Link to={`${post.fields.slug}${post.frontmatter.title}`} itemProp="url">
                     <span itemProp="headline">{title}</span>
                 </Link>
                 </h2>
