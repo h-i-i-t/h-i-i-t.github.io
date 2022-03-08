@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tags-and-blog-list-js",
+    "path": "/undefined/github-pages/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"hi1t0"}},"selectedTag":{"group":[{"fieldValue":"Github Pages","totalCount":1},{"fieldValue":"tips","totalCount":1},{"fieldValue":"お名前.com","totalCount":1}],"nodes":[{"excerpt":"お名前.com でドメインを取得し、 GitHub Pages に独自ドメインを設定する方法 こちらを参考に DNS レコードの設定をしました  Github Pages でカスタムドメインを入力し Save…","fields":{"slug":"/20220307/"},"frontmatter":{"date":"March 07, 2022","title":"お名前.comで取得したドメインをGithub Pagesで使おうとしたらエラー出た。そしてhttps化させる","description":null}}]},"allTag":{"group":[{"fieldValue":".env","totalCount":1},{"fieldValue":"Gatsby","totalCount":2},{"fieldValue":"Github","totalCount":2},{"fieldValue":"Github Pages","totalCount":1},{"fieldValue":"Google Analytics","totalCount":1},{"fieldValue":"Google Search Console","totalCount":2},{"fieldValue":"command","totalCount":1},{"fieldValue":"markdown","totalCount":2},{"fieldValue":"tips","totalCount":3},{"fieldValue":"お名前.com","totalCount":1}]}},"pageContext":{"tag":"Github Pages"}},
+    "staticQueryHashes": ["2841359383","3257411868"]}
