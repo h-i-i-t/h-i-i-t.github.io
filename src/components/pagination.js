@@ -15,7 +15,7 @@ const Pagination = ({ pageContext }) => {
     const { numberOfPages, humanPageNumber } = pageContext
 
     const handleChange = (_event, value) => {
-        value === 1 ? navigate(`/blog`) : navigate(`/blog/${value}`)
+        value === 1 ? navigate(`/${process.env.GATSBY_ROUTE_BLOG}`) : navigate(`/${process.env.GATSBY_ROUTE_BLOG}/${value}`)
     }
     return (
         <PGRoot>

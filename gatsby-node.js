@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 const path = require(`path`)
 const _ = require(`lodash`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
@@ -74,7 +77,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       createPage,
       items: posts,
       itemsPerPage: 6,
-      pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? "/blog" : "/blog"),
+      pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? `/${process.env.GATSBY_ROUTE_BLOG}` : `/${process.env.GATSBY_ROUTE_BLOG}`),
       component: blogList,
       // context: {
       //   tags: tags,
@@ -85,7 +88,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   /* tag */
   createPage({
-    path: '/tag',
+    path: `/${process.env.GATSBY_ROUTE_TAG}`,
     component: tagsAndBlogList,
     context: { tag: "*" }
   });
@@ -94,7 +97,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   if (tags.length > 0) {
     tags.forEach(tag => {
       createPage({
-        path: `/tag/${_.kebabCase(tag.fieldValue)}/`,
+        path: `/${process.env.GATSBY_ROUTE_TAG}/${_.kebabCase(tag.fieldValue)}/`,
         component: tagsAndBlogList,
         context: {
           tag: tag.fieldValue,

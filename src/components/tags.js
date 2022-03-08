@@ -26,7 +26,7 @@ const Tags = ({ tags, selectedTag }) => {
           <Chip
             label={`${tag.fieldValue} ${tag.totalCount}`}
             component="a"
-            href={`/tag/${_.kebabCase(tag.fieldValue)}/`}
+            href={`/${process.env.GATSBY_ROUTE_TAG}/${_.kebabCase(tag.fieldValue)}/`}
             variant={selectedTag === tag.fieldValue ? `outlined` : ''}
             clickable
           />

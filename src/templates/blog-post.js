@@ -26,7 +26,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
           {
-            post.frontmatter.tags ? post.frontmatter.tags.map((tag, i) => <span key={i} style={{margin: 8, padding: 10, fontSize: '0.8em', backgroundColor: "#E6E6E6", borderRadius: "30px"}} ><a style={{textDecoration: `none`}} href={`/tag/${_.kebabCase(tag)}/`}>{tag}</a></span>) : ''
+            post.frontmatter.tags ? post.frontmatter.tags.map((tag, i) => <span key={i} style={{margin: 8, padding: 10, fontSize: '0.8em', backgroundColor: "#E6E6E6", borderRadius: "30px"}} ><a style={{textDecoration: `none`}} href={`/${process.env.GATSBY_ROUTE_TAG}/${_.kebabCase(tag)}/`}>{tag}</a></span>) : ''
           }
         </header>
         <hr style={{marginTop: 12, marginBottom: 24}}/>
@@ -61,14 +61,14 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
+              <Link to={`${previous.fields.slug}${previous.frontmatter.title}`} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
+              <Link to={`${next.fields.slug}${next.frontmatter.title}`} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}

@@ -32,7 +32,7 @@ const Index = ({ data, location }) => {
       <hr />
       <h4 style={{marginTop: "24px", marginBottom: "48px"}}>最新記事</h4>
       <Blogs posts={posts} />
-      <InsertCommentIcon style={{ "paddingTop": "2px", "fontSize": "1.0em", color: "#09427B" }}/><Link to={"/page"}>すべての記事を見る</Link>
+      <InsertCommentIcon style={{ "paddingTop": "2px", "fontSize": "1.0em", color: "#09427B" }}/><Link to={`/${process.env.GATSBY_ROUTE_BLOG}`}>すべての記事を見る</Link>
       <hr />
     </Layout>
   )
@@ -49,7 +49,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
+      limit: 5
       skip: 0
     ) {
       nodes {
