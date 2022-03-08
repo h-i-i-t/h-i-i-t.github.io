@@ -2,6 +2,7 @@
 title: VSCodeでMarkdownを書く時に知るべきこと
 date: "2022-03-03T22:44:44.121Z"
 tags: ["markdown", "tips"]
+type: "blog"
 ---
 
 #### 環境

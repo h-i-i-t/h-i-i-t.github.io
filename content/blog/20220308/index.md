@@ -2,6 +2,8 @@
 title: Gatsbyjsのプロジェクトでサイトマップ出力
 date: "2022-03-08T11:11:11.110Z"
 tags: ["Google Search Console", "tips", "Gatsby"]
+hero: "./1.png"
+type: "blog"
 ---
 
 パッケージインストール

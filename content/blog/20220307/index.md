@@ -2,6 +2,8 @@
 title: お名前.comで取得したドメインをGithub Pagesで使おうとしたらエラー出た。そしてhttps化させる
 date: "2022-03-07T11:11:11.110Z"
 tags: ["Github Pages", "tips", "お名前.com"]
+hero: "./1.png"
+type: "blog"
 ---
 
 お名前.comでドメインを取得し、
