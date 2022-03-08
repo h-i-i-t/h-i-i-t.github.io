@@ -33,8 +33,11 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          GOOGLE_ANALYTICS_TRACKING_ID: ${{ secrets.GOOGLE_ANALYTICS_TRACKING_ID }}
           NODE_ENV: "production"
+          GOOGLE_ANALYTICS_TRACKING_ID: ${{ secrets.GOOGLE_ANALYTICS_TRACKING_ID }}
+          GATSBY_ROUTE_BLOG: ${{ secrets.GATSBY_ROUTE_BLOG }}
+          GATSBY_ROUTE_TAG: ${{ secrets.GATSBY_ROUTE_TAG }}
+
 
       - run: echo hi1t0.com > public/CNAME
 
