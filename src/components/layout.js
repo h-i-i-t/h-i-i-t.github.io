@@ -19,28 +19,28 @@ const Layout = ({ location, title, children }) => {
   if (isRootPath) {
     header = (
       <div>
-        <HLink to="/">
+        <HLink to={`/`}>
           {`hi1t0`}
         </HLink>
-        <HLink to="/blog">
+        <HLink to={`/${process.env.GATSBY_ROUTE_BLOG}`}>
           {`blog`}
         </HLink>
-        <HLink to="/tag">
-          {`tag`}
+        <HLink to={`/${process.env.GATSBY_ROUTE_TAG}`}>
+          {`tags`}
         </HLink>
       </div>
     )
   } else {
     header = (
       <div>
-        <HLink to="/">
+        <HLink to={`/`}>
           {`hi1t0`}
         </HLink>
-        <HLink to="/blog">
+        <HLink to={`/${process.env.GATSBY_ROUTE_BLOG}`}>
           {`blog`}
         </HLink>
-        <HLink to="/tag">
-          {`tag`}
+        <HLink to={`/${process.env.GATSBY_ROUTE_TAG}`}>
+          {`tags`}
         </HLink>
       </div>
     )
