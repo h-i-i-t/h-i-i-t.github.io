@@ -64,7 +64,7 @@ const Seo = ({ description, lang, meta, title, image}) => {
         },
         {
           name: `twitter:card`,
-          content: `summary_large_image`,
+          content: `summary`,
         },
         {
           name: `twitter:creator`,
@@ -78,10 +78,10 @@ const Seo = ({ description, lang, meta, title, image}) => {
           name: `twitter:description`,
           content: metaDescription,
         },
-        {
-          property: `twitter:image`,
-          content: ogpImage,
-        },
+        // {
+        //   property: `twitter:image`,
+        //   content: ogpImage,
+        // },
       ].concat(meta)}
     />
   )
