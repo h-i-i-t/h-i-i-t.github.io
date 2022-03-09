@@ -66,8 +66,8 @@ export const pageQuery = graphql`
           hero {
             id
             childImageSharp {
-              fluid {
-                originalImg
+              original {
+                src
               }
             }
           }

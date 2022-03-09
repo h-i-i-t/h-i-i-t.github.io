@@ -33,7 +33,7 @@ const Blogs = ({ posts }) => {
                   }}>
                     <img
                       alt={`${post.frontmatter.title}`}
-                      src={`${post.frontmatter.hero.childImageSharp.fluid.originalImg}`}
+                      src={`${post.frontmatter.hero.childImageSharp.original.src}`}
                       style={{
                         width: "100%",
                         borderRadius: 24,
