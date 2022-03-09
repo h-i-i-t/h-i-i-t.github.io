@@ -17,6 +17,7 @@ const BlogPostTemplate = ({ data, location }) => {
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        image={post.frontmatter.hero?.childImageSharp.gatsbyImageData}
       />
       <article
         className="blog-post"
@@ -108,6 +109,12 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
+        hero {
+          id
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
       }
       tableOfContents(
         absolute: false

@@ -1,6 +1,7 @@
 /* 記事リスト */
 import * as React from "react"
 import { Link } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 
 const Blogs = ({ posts }) => {
@@ -31,14 +32,15 @@ const Blogs = ({ posts }) => {
                     margin: "24px",
                     marginLeft: 0,
                   }}>
-                    <img
+                    {/* <img
                       alt={`${post.frontmatter.title}`}
-                      src={`${post.frontmatter.hero.childImageSharp.original.src}`}
+                      src={`${post.frontmatter.hero?.childImageSharp.original.src}`}
                       style={{
                         width: "100%",
                         borderRadius: 24,
                       }}
-                    />
+                    /> */}
+                    <GatsbyImage style={{borderRadius: 8}} image={getImage(post.frontmatter.hero?.childImageSharp.gatsbyImageData)} alt={post.frontmatter.title} />
                     <small>{post.frontmatter.date}</small>
                   </div>
                 : ""

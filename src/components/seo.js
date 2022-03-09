@@ -10,13 +10,16 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Seo = ({ description, lang, meta, title }) => {
+import defaultOgpImage from "../images/default-ogp-image.png";
+
+const Seo = ({ description, lang, meta, title, image}) => {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
+            siteUrl
             description
             social {
               twitter
@@ -29,6 +32,8 @@ const Seo = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const ogpImage = image ? `${site.siteMetadata.siteUrl}${image.images.fallback.src}` : `${site.siteMetadata.siteUrl}${defaultOgpImage}`
+
 
   return (
     <Helmet
@@ -51,12 +56,16 @@ const Seo = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
         {
+          property: `og:image`,
+          content: ogpImage,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large`,
         },
         {
           name: `twitter:creator`,
@@ -70,13 +79,17 @@ const Seo = ({ description, lang, meta, title }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          property: `twitter:image`,
+          content: ogpImage,
+        },
       ].concat(meta)}
     />
   )
 }
 
 Seo.defaultProps = {
-  lang: `en`,
+  lang: `jp`,
   meta: [],
   description: ``,
 }
