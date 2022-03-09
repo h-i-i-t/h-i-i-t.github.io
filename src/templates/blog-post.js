@@ -5,6 +5,7 @@ import _ from "lodash"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import ShareSns from "../components/share-sns"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -44,6 +45,8 @@ const BlogPostTemplate = ({ data, location }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
+        {/* 日本語を含むためエンコードする */}
+        <ShareSns title={post.frontmatter.title} url={encodeURI(`https://hi1t0.com${post.fields.slug}${post.frontmatter.title}`)} />
         <hr />
         <footer>
           <Bio />
@@ -94,6 +97,9 @@ export const pageQuery = graphql`
     }
     markdownRemark(id: { eq: $id }) {
       id
+      fields {
+        slug
+      }
       excerpt(pruneLength: 160)
       html
       frontmatter {
