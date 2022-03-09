@@ -43,6 +43,26 @@ const Seo = ({ description, lang, meta, title, image, url, type}) => {
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
+          name: `twitter:card`,
+          content: `summary`,
+        },
+        {
+          property: `twitter:image`,
+          content: ogpImage,
+        },
+        {
+          name: `twitter:creator`,
+          content: site.siteMetadata?.social?.twitter || ``,
+        },
+        {
+          name: `twitter:title`,
+          content: title,
+        },
+        {
+          name: `twitter:description`,
+          content: metaDescription,
+        },
+        {
           property: `og:url`,
           content: url || site.siteMetadata?.siteUrl,
         },
@@ -65,26 +85,6 @@ const Seo = ({ description, lang, meta, title, image, url, type}) => {
         {
           property: `og:type`,
           content: type,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.social?.twitter || ``,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-        {
-          property: `twitter:image`,
-          content: ogpImage,
         },
       ].concat(meta)}
     />
