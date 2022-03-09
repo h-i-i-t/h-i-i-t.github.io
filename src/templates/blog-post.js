@@ -50,8 +50,7 @@ const BlogPostTemplate = ({ data, location }) => {
           itemProp="articleBody"
         />
         {/* 日本語を含むためエンコードする */}
-        {/* <ShareSns title={post.frontmatter.title} url={encodeURI(`${data.site.siteMetadata?.siteUrl}${post.fields.slug}${post.frontmatter.title}`)} /> */}
-        <ShareSns title={post.frontmatter.title} url={`${data.site.siteMetadata?.siteUrl}${post.fields.slug}${post.frontmatter.title}`} />
+        <ShareSns title={post.frontmatter.title} url={encodeURI(`${data.site.siteMetadata?.siteUrl}${post.fields.slug}${post.frontmatter.title}`)} />
         <hr />
         <footer>
           <Bio />
