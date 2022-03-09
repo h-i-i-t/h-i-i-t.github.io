@@ -3,7 +3,7 @@ title: VSCodeでMarkdownを書く時に知るべきこと
 date: "2022-03-03T22:44:44.121Z"
 description: gatsby-starter-blogをカスタムする。今回はMarkdownの基礎知識
 tags: ["markdown", "tips"]
-type: "blog"
+type: blog
 ---
 
 #### 環境
