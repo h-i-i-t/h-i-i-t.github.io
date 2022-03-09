@@ -72,5 +72,5 @@ yarn-error.log
 # document
 docs
 
-# blog
-content
+# blog: contentを非表示にするとページができなくなる
+# content
