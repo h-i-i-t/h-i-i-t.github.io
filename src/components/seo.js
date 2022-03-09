@@ -34,6 +34,8 @@ const Seo = ({ description, lang, meta, title, image}) => {
   const defaultTitle = site.siteMetadata?.title
   const ogpImage = image ? `${site.siteMetadata.siteUrl}${image.images.fallback.src}` : `${site.siteMetadata.siteUrl}${defaultOgpImage}`
 
+  console.log('ogpImage: ', ogpImage)
+
 
   return (
     <Helmet
