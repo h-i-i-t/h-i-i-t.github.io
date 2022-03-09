@@ -1,4 +1,117 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hi1t0 RSS Feed]]></title><description><![CDATA[日々学んだことなどを書き溜めていく。主にjavascript、react、html、css、firebase、flutter、githubなどweb制作のものが多くなると思います]]></description><link>https://hi1t0.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 09 Mar 2022 00:12:24 GMT</lastBuildDate><item><title><![CDATA[Gatsbyjsのプロジェクトでサイトマップ出力]]></title><description><![CDATA[パッケージインストール gatsby-config.js の plugins に以下の項目を追加するだけ Google Search Consoleを開き を入力しサイトマップを追加する  後日確認したところステータスは成功になっていました]]></description><link>https://hi1t0.com/20220308/</link><guid isPermaLink="false">https://hi1t0.com/20220308/</guid><pubDate>Tue, 08 Mar 2022 11:11:11 GMT</pubDate><content:encoded>&lt;p&gt;パッケージインストール&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hi1t0 RSS Feed]]></title><description><![CDATA[日々学んだことなどを書き溜めていく。主にjavascript、react、html、css、firebase、flutter、githubなどweb制作のものが多くなると思います]]></description><link>https://hi1t0.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 09 Mar 2022 00:21:41 GMT</lastBuildDate><item><title><![CDATA[Githubにpushして更新するとGithub Pagesのカスタムドメインが外れてしまう]]></title><description><![CDATA[でページを更新すると Github Pages の Custom domain の欄が空白になってしまう  調べた結果、 カスタムドメインを入力して Save を押すと CNAME というファイルが Github Pages…]]></description><link>https://hi1t0.com/20220309/</link><guid isPermaLink="false">https://hi1t0.com/20220309/</guid><pubDate>Wed, 09 Mar 2022 11:11:11 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ git push origin main&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;でページを更新すると Github Pages の Custom domain の欄が空白になってしまう&lt;/p&gt;
+&lt;div style=&quot;width: 100%; margin-left: auto; margin-right: auto&quot;&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a6f3b98ac3d6a38ed4c5a9230a372d0b/e8950/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 39.87341772151899%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAABWUlEQVQoz42S224bMQxE9/9/LUDahwBN0wenTuw03osulLSry+oUkhMXBfpQAgONKGIwJDWEdcV5T631hhZKac7nN15fT2zrxv/G4HzA+3AT+jzdVphcRllBW4PzDhGLONvv1gnamM6N2M6tCIOxltPpzDTNpJSoVNjhvSi+yg++zN+4Hx+4X564UwfulgMP7sBTfOZxO3R83/7woblblO7qpexXhxXMZnkPI0vSTFExRcOUhDEalmxR5YqlCGoXzC7oXRisFaZ5ppTyV8tthr/eLqjFYLRFK8M8zlhtsUbw4gluRUIl548BVhhEhMs4km/Za2wxMs6KyzTT5mzEMS2KmDNrjP9YR+0YjqcLzz+PWOtIuRBjouw7WmuOLy/dffsJ3ntCCDjXliOIuM5b3ocVEwox7wyTsn3L+15JOXfR1n5Dcx1T6mgulRGctnjnyR/vn7Wp1K7xGzyfai/M3pNAAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;test&quot;
+        title=&quot;test&quot;
+        src=&quot;/static/a6f3b98ac3d6a38ed4c5a9230a372d0b/f058b/1.png&quot;
+        srcset=&quot;/static/a6f3b98ac3d6a38ed4c5a9230a372d0b/c26ae/1.png 158w,
+/static/a6f3b98ac3d6a38ed4c5a9230a372d0b/6bdcf/1.png 315w,
+/static/a6f3b98ac3d6a38ed4c5a9230a372d0b/f058b/1.png 630w,
+/static/a6f3b98ac3d6a38ed4c5a9230a372d0b/40601/1.png 945w,
+/static/a6f3b98ac3d6a38ed4c5a9230a372d0b/78612/1.png 1260w,
+/static/a6f3b98ac3d6a38ed4c5a9230a372d0b/e8950/1.png 2000w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;調べた結果、&lt;/p&gt;
+&lt;p&gt;カスタムドメインを入力して Save を押すと CNAME というファイルが Github Pages に反映されているリポジトリに生成される。これを更新する時に含めなければいけなかった&lt;/p&gt;
+&lt;div style=&quot;width: 100%; margin-left: auto; margin-right: auto&quot;&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/31629cbcb3c2db925996b5a0b93a2dd5/891d5/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 5.063291139240507%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAPklEQVQI11XJMRKAIAxFQe9/VSFxBARm8vNsbCy22mOMh7NUzJzMJEJIydob84tSjTkX+i70J4m7dao5rQ9eTU9N4/bq8g0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;test&quot;
+        title=&quot;test&quot;
+        src=&quot;/static/31629cbcb3c2db925996b5a0b93a2dd5/f058b/2.png&quot;
+        srcset=&quot;/static/31629cbcb3c2db925996b5a0b93a2dd5/c26ae/2.png 158w,
+/static/31629cbcb3c2db925996b5a0b93a2dd5/6bdcf/2.png 315w,
+/static/31629cbcb3c2db925996b5a0b93a2dd5/f058b/2.png 630w,
+/static/31629cbcb3c2db925996b5a0b93a2dd5/40601/2.png 945w,
+/static/31629cbcb3c2db925996b5a0b93a2dd5/78612/2.png 1260w,
+/static/31629cbcb3c2db925996b5a0b93a2dd5/891d5/2.png 1520w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;CNAME はカスタムドメイン名だけが書かれたファイル&lt;/p&gt;
+&lt;p&gt;なので.github/workflow/gh-pages.yml の中身に１行加える&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ - run: echo hi1t0.com &gt; public/CNAME&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div style=&quot;width: 100%; margin-left: auto; margin-right: auto&quot;&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1b2e7dbb7f1597aef7f67fef5f0b1edc/a83dd/3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.9620253164557%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAACDElEQVQoz22Sa2vbQBBF9f9/VqFQkpY0Thy/ZCWyHqvVc9+ynZZTtEkNhX4YZlmYw9x7J0lfCx5WL2y3B142e/b7jP3hFWsdLihGrTiLgmGQCC2xwWKCZfIK5XXsOhhGNzF5TbLdl/y4e+Lb/Yqfjzs2u5z1JsM5hw+ayRqckgzNibYt6e2ItF2EutlhZxf7Al3+kqwWfN08kR/3NE2LEII0zbDW4oPBGYs1E9L1cWgB+LPn/Xrl/fp+q1+fPcmqmu/pgfJUUNWCum5Ij2846/CzxWuDHzoa00aJyxbL4OVy+W8lpShYp480QjIMA0J8AG0EaozSOCmoXcfoFf4cPoDXD8D1ev2nkl5WVNkDu/2RLMsoipJj9glcQjGauXjjWhY4WaPainPb8D6puO3oJ3o30to+ept0QpBvnlhvdpzy002y1gbnNUprwtBipEAqST3V9Lpj0H1MNswBv1Tw8Z20UpK/vbLb7SnLiqaRN6D1BjMp/NDTmI7JTVjv0N4g9URvDJf5TAiBOcyxJ23VsLt7YLVeR7kLNM3ecM5HD/XioajYDDnHqb5JK1RFbRrCZY5+3jyscsn9l2c22xeen9fk+Yljln+ejWKcFK6pmPqObugY3EjvBmrdUCoR4UtQCyymLCtBunpmd0jjhn9T9n7xxKCd5dI3/K4qLuNAZZoIdbOPd6mCYT7PN+AfUQg8IS8Pvb8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;test&quot;
+        title=&quot;test&quot;
+        src=&quot;/static/1b2e7dbb7f1597aef7f67fef5f0b1edc/f058b/3.png&quot;
+        srcset=&quot;/static/1b2e7dbb7f1597aef7f67fef5f0b1edc/c26ae/3.png 158w,
+/static/1b2e7dbb7f1597aef7f67fef5f0b1edc/6bdcf/3.png 315w,
+/static/1b2e7dbb7f1597aef7f67fef5f0b1edc/f058b/3.png 630w,
+/static/1b2e7dbb7f1597aef7f67fef5f0b1edc/40601/3.png 945w,
+/static/1b2e7dbb7f1597aef7f67fef5f0b1edc/78612/3.png 1260w,
+/static/1b2e7dbb7f1597aef7f67fef5f0b1edc/a83dd/3.png 1482w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;これで git push した時に public フォルダに CNAME ファイルが含まれるようになる&lt;/p&gt;
+&lt;p&gt;参考：&lt;a href=&quot;https://jj-blues.com/cms/wantto-outputtofile/&quot;&gt;ファイルへ出力する&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsbyjsのプロジェクトでサイトマップ出力]]></title><description><![CDATA[パッケージインストール gatsby-config.js の plugins に以下の項目を追加するだけ Google Search Consoleを開き を入力しサイトマップを追加する  後日確認したところステータスは成功になっていました]]></description><link>https://hi1t0.com/20220308/</link><guid isPermaLink="false">https://hi1t0.com/20220308/</guid><pubDate>Tue, 08 Mar 2022 11:11:11 GMT</pubDate><content:encoded>&lt;p&gt;パッケージインストール&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;$ npm install gatsby&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;plugin&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;sitemap&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;gatsby-config.js の plugins に以下の項目を追加するだけ&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;  &lt;span class=&quot;token literal-property property&quot;&gt;siteMetadata&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
