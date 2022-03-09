@@ -11,27 +11,33 @@ const Blogs = ({ posts }) => {
         const title = post.frontmatter.title || post.fields.slug
 
         return (
-          <li key={post.fields.slug} style={{ width: "100%", padding: 8 }}>
+          <li key={post.fields.slug}>
             <article
-            className="post-list-item"
-            itemScope
-            itemType="http://schema.org/Article"
+              className="post-list-item"
+              itemScope
+              itemType="http://schema.org/Article"
+              style={{
+                width: "100%",
+                padding: 8,
+                // border: "solid",
+              }}
             >
               {
                 post.frontmatter.hero ?
                   <div style={{
                     float: "left",
                     maxWidth: "250px",
-                    maxHeight: "250px",
                     width: "30%",
-                    height: "30%",
                     margin: "24px",
                     marginLeft: 0,
                   }}>
                     <img
                       alt={`${post.frontmatter.title}`}
                       src={`${post.frontmatter.hero.childImageSharp.fluid.originalImg}`}
-                      style={{ width: "100%", borderRadius: 24, }}
+                      style={{
+                        width: "100%",
+                        borderRadius: 24,
+                      }}
                     />
                     <small>{post.frontmatter.date}</small>
                   </div>
@@ -49,10 +55,11 @@ const Blogs = ({ posts }) => {
               </header>
               <section>
                   <p
-                  dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                  }}
-                  itemProp="description"
+                    style={{ overflow: "hidden" }}
+                    dangerouslySetInnerHTML={{
+                        __html: post.frontmatter.description || post.excerpt,
+                    }}
+                    itemProp="description"
                   />
               </section>
             </article>
