@@ -63,6 +63,33 @@ const MuiThemeProvider = ({ children }) => {
         alignItems: "center",
         justifyContent: "center",
       },
+      blogImage: {
+        fontWeight: "bold",
+        "@media (max-width:374px)": {
+          display: "none",
+        },
+        "@media (min-width: 375px) and (max-width:768px)": {
+          fontSize: "1.2em",
+        },
+        "@media (min-width: 769px)" : {
+          fontSize: "1.2em",
+        },
+      },
+      blogHeader: {
+        fontWeight: "bold",
+        "@media (max-width:374px)": {
+          fontSize: "1.0em",
+          marginBottom: "8px",
+        },
+        "@media (min-width: 375px) and (max-width:768px)": {
+          fontSize: "1.2em",
+          marginBottom: "16px",
+        },
+        "@media (min-width: 769px)" : {
+          fontSize: "1.5em",
+          marginBottom: "24px",
+        },
+      },
     },
     // レスポンシブのブレイクポイント
     'breakpoints': {

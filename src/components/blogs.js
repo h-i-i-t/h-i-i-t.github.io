@@ -2,9 +2,26 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { styled } from "@mui/material/styles";
+import { useTheme, useMediaQuery } from '@mui/material';
 
+const BlogImage = styled("div")(({ theme }) => ({
+  ...theme.mixins.blogImage,
+  float: "left",
+  maxWidth: "250px",
+  width: "30%",
+  margin: "24px",
+  marginLeft: 0,
+}));
+
+const BlogHeader = styled("div")(({ theme }) => ({
+  ...theme.mixins.blogHeader,
+  marginBottom: "16px",
+}));
 
 const Blogs = ({ posts }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
 
   return (
     <ol style={{ listStyle: `none` }}>
@@ -25,36 +42,20 @@ const Blogs = ({ posts }) => {
             >
               {
                 post.frontmatter.hero ?
-                  <div style={{
-                    float: "left",
-                    maxWidth: "250px",
-                    width: "30%",
-                    margin: "24px",
-                    marginLeft: 0,
-                  }}>
-                    {/* <img
-                      alt={`${post.frontmatter.title}`}
-                      src={`${post.frontmatter.hero?.childImageSharp.original.src}`}
-                      style={{
-                        width: "100%",
-                        borderRadius: 24,
-                      }}
-                    /> */}
+                  <BlogImage>
                     <GatsbyImage style={{borderRadius: 8}} image={getImage(post.frontmatter.hero?.childImageSharp.gatsbyImageData)} alt={post.frontmatter.title} />
-                    <small>{post.frontmatter.date}</small>
-                  </div>
+                    <small style={{ fontSize: "0.65em", fontWeight: "normal", }}>{post.frontmatter.date}</small>
+                  </BlogImage>
                 : ""
               }
-              <header>
-                  <h2>
-                  <Link to={`${post.fields.slug}${post.frontmatter.title}`} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                  </Link>
-                  </h2>
-                  {
-                    !post.frontmatter.hero ? <small>{post.frontmatter.date}</small> : ''
-                  }
-              </header>
+              <BlogHeader>
+                <Link to={`${post.fields.slug}${post.frontmatter.title}`} style={{ textDecoration: `none`, }}>
+                    {title}
+                </Link>
+              </BlogHeader>
+              {
+                !post.frontmatter.hero || isMobile ? <small>{post.frontmatter.date}</small> : ''
+              }
               <section>
                   <p
                     style={{ overflow: "hidden" }}
