@@ -1,7 +1,8 @@
 ---
-title: My Second Post
+title: MySecondPost
 date: "2015-05-06T23:46:37.121Z"
 tags: ["markdown"]
+description: 2nd post
 ---
 
 Wow! I love blogging so much already.
