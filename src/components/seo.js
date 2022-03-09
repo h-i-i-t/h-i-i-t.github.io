@@ -39,6 +39,7 @@ const Seo = ({ description, lang, meta, title, image, url, type}) => {
       htmlAttributes={{
         lang,
       }}
+      head={{prefix: "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
@@ -63,10 +64,6 @@ const Seo = ({ description, lang, meta, title, image, url, type}) => {
           content: metaDescription,
         },
         {
-          property: `og:url`,
-          content: url || site.siteMetadata?.siteUrl,
-        },
-        {
           name: `description`,
           content: metaDescription,
         },
@@ -75,16 +72,32 @@ const Seo = ({ description, lang, meta, title, image, url, type}) => {
           content: title,
         },
         {
-          property: `og:description`,
-          content: metaDescription,
+          property: `og:type`,
+          content: type,
+        },
+        {
+          property: `og:url`,
+          content: url || site.siteMetadata?.siteUrl,
         },
         {
           property: `og:image`,
           content: ogpImage,
         },
         {
-          property: `og:type`,
-          content: type,
+          property: `og:width`,
+          content: 1200,
+        },
+        {
+          property: `og:height`,
+          content: 600,
+        },
+        {
+          property: `site_name`,
+          content: title,
+        },
+        {
+          property: `og:description`,
+          content: metaDescription,
         },
       ].concat(meta)}
     />
