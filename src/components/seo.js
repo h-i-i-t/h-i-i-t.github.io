@@ -32,7 +32,7 @@ const Seo = ({ description, lang, meta, title, image, url}) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  const ogpImage = image ? `${site.siteMetadata.siteUrl}${image.images.fallback.src}` : `${site.siteMetadata.siteUrl}${defaultOgpImage}`
+  const ogpImage = image?.images?.fallback ? `${site.siteMetadata.siteUrl}${image.images.fallback.src}` : `${site.siteMetadata.siteUrl}${defaultOgpImage}`
 
   return (
     <Helmet
