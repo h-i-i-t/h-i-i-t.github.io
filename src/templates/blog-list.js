@@ -16,7 +16,7 @@ const BlogListTemplate = ({ data, location, pageContext }) => {
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <Seo url={url} title="All posts" />
+        <Seo url={url} title="All posts" type="article" />
         <Bio />
         <p>
           No blog posts found. Add markdown posts to "content/blog" (or the

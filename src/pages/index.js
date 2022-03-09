@@ -29,7 +29,7 @@ const Index = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="hi1t0Index" />
+      <Seo title="hi1t0Index" type="website" />
       <Bio />
       <hr />
       <h4 style={{marginTop: "24px", marginBottom: "48px"}}>最新記事</h4>

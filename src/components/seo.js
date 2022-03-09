@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import defaultOgpImage from "../images/default-ogp-image.png";
 
-const Seo = ({ description, lang, meta, title, image, url}) => {
+const Seo = ({ description, lang, meta, title, image, url, type}) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -64,7 +64,7 @@ const Seo = ({ description, lang, meta, title, image, url}) => {
         },
         {
           property: `og:type`,
-          content: `website` || `article`,
+          content: type,
         },
         {
           name: `twitter:card`,
@@ -97,6 +97,7 @@ Seo.defaultProps = {
   description: ``,
   image: {},
   url: ``,
+  type: `website`,
 }
 
 Seo.propTypes = {
@@ -106,6 +107,7 @@ Seo.propTypes = {
   title: PropTypes.string.isRequired,
   image: PropTypes.object,
   url: PropTypes.string,
+  type: PropTypes.string,
 }
 
 export default Seo
