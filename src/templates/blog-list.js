@@ -11,10 +11,12 @@ const BlogListTemplate = ({ data, location, pageContext }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
+  const url = `${data.site.siteMetadata?.siteUrl}${location.pathname}`
+
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
+        <Seo url={url} title="All posts" />
         <Bio />
         <p>
           No blog posts found. Add markdown posts to "content/blog" (or the
@@ -27,7 +29,7 @@ const BlogListTemplate = ({ data, location, pageContext }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="hi1t0BlogList" />
+      <Seo url={url} title="hi1t0BlogList" />
       <hr />
       <h4 style={{marginTop: "24px", marginBottom: "48px"}}>記事一覧</h4>
       <Blogs posts={posts} />
@@ -47,6 +49,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     allMarkdownRemark(

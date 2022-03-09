@@ -20,9 +20,11 @@ const TagsAndBlogListTemplate = ({ data, location, pageContext }) => {
     new Map(posts.map((post) => [post.fields.slug, post])).values()
   );
 
+  const url = `${data.site.siteMetadata?.siteUrl}${location.pathname}`
+
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="hi1t0Tags" />
+      <Seo url={url} title="hi1t0Tags" />
       <hr />
       <h4 style={{marginTop: "24px", marginBottom: "48px"}}>{pageContext.tag === '*' ? 'タグ一覧' : pageContext.tag}</h4>
       <Tags tags={tags} selectedTag={pageContext.tag}/>
@@ -40,6 +42,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     selectedTag: allMarkdownRemark(
