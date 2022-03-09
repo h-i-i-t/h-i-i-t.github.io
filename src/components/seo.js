@@ -88,7 +88,7 @@ const Seo = ({ description, lang, meta, title, image}) => {
 }
 
 Seo.defaultProps = {
-  lang: `jp`,
+  lang: `en`,
   meta: [],
   description: ``,
 }
