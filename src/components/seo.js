@@ -82,10 +82,10 @@ const Seo = ({ description, lang, meta, title, image, url}) => {
           name: `twitter:description`,
           content: metaDescription,
         },
-        // {
-        //   property: `twitter:image`,
-        //   content: ogpImage,
-        // },
+        {
+          property: `twitter:image`,
+          content: ogpImage,
+        },
       ].concat(meta)}
     />
   )
@@ -95,6 +95,8 @@ Seo.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  image: {},
+  url: ``,
 }
 
 Seo.propTypes = {
@@ -102,6 +104,8 @@ Seo.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  image: PropTypes.object,
+  url: PropTypes.string,
 }
 
 export default Seo
