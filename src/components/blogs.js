@@ -49,7 +49,7 @@ const Blogs = ({ posts }) => {
                 : ""
               }
               <BlogHeader>
-                <Link to={`${post.fields.slug}${post.frontmatter.title}`} style={{ textDecoration: `none`, }}>
+                <Link to={`${post.fields.slug}`} style={{ textDecoration: `none`, }}>
                     {title}
                 </Link>
               </BlogHeader>
