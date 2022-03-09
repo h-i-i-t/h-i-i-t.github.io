@@ -12,9 +12,12 @@ const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
+  const url = `${data.site.siteMetadata?.siteUrl}${location.pathname}`
+
   return (
     <Layout location={location} title={siteTitle}>
       <Seo
+        url={url}
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
         image={post.frontmatter.hero?.childImageSharp.gatsbyImageData}
