@@ -24,7 +24,7 @@ const TagsAndBlogListTemplate = ({ data, location, pageContext }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo url={url} title="hi1t0Tags" />
+      <Seo url={url} title="hi1t0Tags" type="article" />
       <hr />
       <h4 style={{marginTop: "24px", marginBottom: "48px"}}>{pageContext.tag === '*' ? 'タグ一覧' : pageContext.tag}</h4>
       <Tags tags={tags} selectedTag={pageContext.tag}/>
