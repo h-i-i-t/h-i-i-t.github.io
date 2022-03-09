@@ -112,7 +112,7 @@ export const pageQuery = graphql`
         hero {
           id
           childImageSharp {
-            gatsbyImageData
+            gatsbyImageData(aspectRatio: 1.5)
           }
         }
       }
