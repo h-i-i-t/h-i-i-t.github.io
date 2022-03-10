@@ -51,7 +51,7 @@ const BlogPostTemplate = ({ data, location }) => {
           itemProp="articleBody"
         />
         {/* 日本語を含むためエンコードする */}
-        <ShareSns title={post.frontmatter.title} url={encodeURI(`${data.site.siteMetadata?.siteUrl}${post.fields.slug}${post.frontmatter.title}`)} />
+        <ShareSns title={post.frontmatter.title} url={encodeURI(url)} />
         <hr />
         <footer>
           <Bio />
@@ -69,14 +69,14 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={`${previous.fields.slug}`} rel="prev">
+              <Link to={`/${process.env.GATSBY_ROUTE_BLOG}${previous.fields.slug}`}>
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={`${next.fields.slug}`} rel="next">
+              <Link to={`/${process.env.GATSBY_ROUTE_BLOG}${next.fields.slug}`}>
                 {next.frontmatter.title} →
               </Link>
             )}

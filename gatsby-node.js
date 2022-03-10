@@ -61,8 +61,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       const previousPostId = index === 0 ? null : posts[index - 1].id
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
 
+      /* ブログ記事 */
       createPage({
-        path: `${post.fields.slug}`,
+        path: `${process.env.GATSBY_ROUTE_BLOG}${post.fields.slug}`,
         component: blogPost,
         context: {
           id: post.id,
@@ -72,7 +73,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
 
-    // Create your paginated pages
+    /* ブログ記事一覧 */
     paginate({
       createPage,
       items: posts,

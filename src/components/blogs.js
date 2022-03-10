@@ -76,7 +76,7 @@ const Blogs = ({ posts }) => {
               : ""
             }
             <BlogTitle>
-              <Link to={`${post.fields.slug}`} style={{ textDecoration: `none`, }}>
+              <Link to={`/${process.env.GATSBY_ROUTE_BLOG}${post.fields.slug}`} style={{ textDecoration: `none`, }}>
                   {title}
               </Link>
             </BlogTitle>
