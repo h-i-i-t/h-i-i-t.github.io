@@ -6,15 +6,55 @@ import { styled } from "@mui/material/styles";
 import { useTheme, useMediaQuery } from '@mui/material';
 
 const BlogContainer = styled("article")(({ theme }) => ({
-  ...theme.mixins.blogContainer,
+  // ...theme.mixins.blogContainer,
+  width: "100%",
+  minHeight: "250px",
+  marginBottom: "24px",
+  "@media (max-width:375px)": {
+    minHeight: "150px",
+  },
+  "@media (min-width: 376px) and (max-width:768px)": {
+  },
+  "@media (min-width: 769px)" : {
+  },
 }));
 
 const BlogImage = styled("div")(({ theme }) => ({
-  ...theme.mixins.blogImage,
+  float: "left",
+  maxWidth: "250px",
+  width: "30%",
+  margin: "24px",
+  marginLeft: 0,
+  borderRadius: 8,
+  "@media (max-width:375px)": {
+    float: "none",
+    minWidth: "320px",
+    minHeight: "100px",
+    maxHeight: "160px",
+    marginLeft: "auto",
+    marginRight: "auto",
+    overflow: "hidden",
+  },
+  "@media (min-width: 376px) and (max-width:768px)": {
+  },
+  "@media (min-width: 769px)" : {
+  },
 }));
 
 const BlogTitle = styled("div")(({ theme }) => ({
-  ...theme.mixins.blogTitle,
+  fontWeight: "bold",
+  "@media (max-width:375px)": {
+    fontSize: "1.0em",
+    marginBottom: "8px",
+  },
+  "@media (min-width: 376px) and (max-width:768px)": {
+    fontSize: "1.2em",
+    marginBottom: "16px",
+  },
+  "@media (min-width: 769px)" : {
+    fontSize: "1.5em",
+    marginBottom: "24px",
+  },
 }));
 
 const Blogs = ({ posts }) => {
