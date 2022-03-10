@@ -18,6 +18,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-material-ui`,
+    `gatsby-theme-material-ui`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sitemap`,
     {

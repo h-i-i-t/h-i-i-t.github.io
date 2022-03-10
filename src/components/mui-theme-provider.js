@@ -6,6 +6,9 @@ import React from "react"
 // import { useTheme, useMediaQuery } from '@mui/material';
 // const theme = useTheme();
 // const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+// theme.breakpoints.up(xs)
+// theme.breakpoints.only(xs)
+// theme.breakpoints.between(xs, sm)
 
 
 const MuiThemeProvider = ({ children }) => {
@@ -81,20 +84,21 @@ const MuiThemeProvider = ({ children }) => {
         width: "30%",
         margin: "24px",
         marginLeft: 0,
+        borderRadius: 8,
         "@media (max-width:375px)": {
           float: "none",
-          width: "200px",
+          minWidth: "320px",
           minHeight: "100px",
-          maxHeight: "150px",
+          maxHeight: "160px",
           marginLeft: "auto",
           marginRight: "auto",
           overflow: "hidden",
         },
         "@media (min-width: 376px) and (max-width:768px)": {
-          fontSize: "1.2em",
+          // fontSize: "1.2em",
         },
         "@media (min-width: 769px)" : {
-          fontSize: "1.2em",
+          // fontSize: "1.2em",
         },
       },
       blogTitle: {
@@ -123,7 +127,7 @@ const MuiThemeProvider = ({ children }) => {
         'xl',
       ],
       'values': {
-        'xs': 375, // スマホ用
+        'xs': 376, // スマホ用
         'sm': 768, // タブレット用
         'md': 992, // PC用
         'lg': 1400,

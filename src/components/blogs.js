@@ -31,7 +31,7 @@ const Blogs = ({ posts }) => {
             {
               post.frontmatter.hero ?
                 <BlogImage>
-                  <GatsbyImage style={{borderRadius: 8, objectFit: "fill",}} image={getImage(post.frontmatter.hero?.childImageSharp.gatsbyImageData)} alt={post.frontmatter.title} />
+                  <GatsbyImage style={{borderRadius: 8}} image={getImage(post.frontmatter.hero?.childImageSharp.gatsbyImageData)} alt={post.frontmatter.title} />
                 </BlogImage>
               : ""
             }
