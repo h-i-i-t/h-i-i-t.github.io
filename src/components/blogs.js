@@ -6,7 +6,7 @@ import { styled } from "@mui/material/styles";
 import { useTheme, useMediaQuery } from '@mui/material';
 
 const BlogContainer = styled("article")(({ theme }) => ({
-  // ...theme.mixins.blogContainer,
+  // ...theme.mixins.blogContainer, // Github Pagesに上げる時にmixinsが反映されない
   width: "100%",
   minHeight: "250px",
   marginBottom: "24px",
@@ -19,7 +19,7 @@ const BlogContainer = styled("article")(({ theme }) => ({
   },
 }));
 
-const BlogImage = styled("div")(({ theme }) => ({
+const BlogImage = styled("div")({
   float: "left",
   maxWidth: "250px",
   width: "30%",
@@ -39,9 +39,9 @@ const BlogImage = styled("div")(({ theme }) => ({
   },
   "@media (min-width: 769px)" : {
   },
-}));
+});
 
-const BlogTitle = styled("div")(({ theme }) => ({
+const BlogTitle = styled("div")({
   fontWeight: "bold",
   "@media (max-width:375px)": {
     fontSize: "1.0em",
@@ -55,7 +55,7 @@ const BlogTitle = styled("div")(({ theme }) => ({
     fontSize: "1.5em",
     marginBottom: "24px",
   },
-}));
+});
 
 const Blogs = ({ posts }) => {
   const theme = useTheme();
@@ -76,7 +76,7 @@ const Blogs = ({ posts }) => {
               : ""
             }
             <BlogTitle>
-              <Link to={`${post.fields.slug}`} style={{ textDecoration: `none`, }}>
+              <Link to={`/${process.env.GATSBY_ROUTE_BLOG}${post.fields.slug}`} style={{ textDecoration: `none`, }}>
                   {title}
               </Link>
             </BlogTitle>
