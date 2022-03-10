@@ -47,10 +47,10 @@ const Seo = ({ description, lang, meta, title, image, url, type}) => {
           name: `twitter:card`,
           content: `summary`,
         },
-        {
-          property: `twitter:image`,
-          content: ogpImage,
-        },
+        // {
+        //   property: `twitter:image`,
+        //   content: ogpImage,
+        // },
         {
           name: `twitter:creator`,
           content: site.siteMetadata?.social?.twitter || ``,
