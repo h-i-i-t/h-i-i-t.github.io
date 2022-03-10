@@ -70,9 +70,11 @@ const Blogs = ({ posts }) => {
           <BlogContainer key={post.fields.slug}>
             {
               post.frontmatter.hero ?
-                <BlogImage>
-                  <GatsbyImage style={{borderRadius: 8}} image={getImage(post.frontmatter.hero?.childImageSharp.gatsbyImageData)} alt={post.frontmatter.title} />
-                </BlogImage>
+                <Link to={`/${process.env.GATSBY_ROUTE_BLOG}${post.fields.slug}`} style={{ textDecoration: `none`, }}>
+                  <BlogImage>
+                    <GatsbyImage style={{borderRadius: 8}} image={getImage(post.frontmatter.hero?.childImageSharp.gatsbyImageData)} alt={post.frontmatter.title} />
+                  </BlogImage>
+                </Link>
               : ""
             }
             <BlogTitle>
