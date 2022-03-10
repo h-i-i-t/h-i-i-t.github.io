@@ -1,6 +1,5 @@
 ---
-title: pagination to gatsbyjs
-description: gatsby-starter-blogのプロジェクトにページネーションをつける
+title: gatsby-starter-blogのプロジェクトにページネーションをつける
 date: "2022-03-10T11:11:11.110Z"
 tags: ["Gatsby", "pagination"]
 type: "blog"

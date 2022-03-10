@@ -63,25 +63,47 @@ const MuiThemeProvider = ({ children }) => {
         alignItems: "center",
         justifyContent: "center",
       },
-      blogImage: {
-        fontWeight: "bold",
-        "@media (max-width:374px)": {
-          display: "none",
+      blogContainer: {
+        width: "100%",
+        minHeight: "250px",
+        marginBottom: "24px",
+        "@media (max-width:375px)": {
+          minHeight: "150px",
         },
-        "@media (min-width: 375px) and (max-width:768px)": {
+        "@media (min-width: 376px) and (max-width:768px)": {
+        },
+        "@media (min-width: 769px)" : {
+        },
+      },
+      blogImage: {
+        float: "left",
+        maxWidth: "250px",
+        width: "30%",
+        margin: "24px",
+        marginLeft: 0,
+        "@media (max-width:375px)": {
+          float: "none",
+          width: "200px",
+          minHeight: "100px",
+          maxHeight: "150px",
+          marginLeft: "auto",
+          marginRight: "auto",
+          overflow: "hidden",
+        },
+        "@media (min-width: 376px) and (max-width:768px)": {
           fontSize: "1.2em",
         },
         "@media (min-width: 769px)" : {
           fontSize: "1.2em",
         },
       },
-      blogHeader: {
+      blogTitle: {
         fontWeight: "bold",
-        "@media (max-width:374px)": {
+        "@media (max-width:375px)": {
           fontSize: "1.0em",
           marginBottom: "8px",
         },
-        "@media (min-width: 375px) and (max-width:768px)": {
+        "@media (min-width: 376px) and (max-width:768px)": {
           fontSize: "1.2em",
           marginBottom: "16px",
         },

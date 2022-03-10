@@ -1,7 +1,6 @@
 ---
 title: Githubにpushして更新するとGithub Pagesのカスタムドメインが外れてしまう
 date: "2022-03-09T11:11:11.110Z"
-description: gatsby-starter-blogをカスタムする。今回はGithub Pagesで更新するときに必要な設定
 tags: ["Github Pages", "tips"]
 type: "blog"
 hero: "./1.png"
