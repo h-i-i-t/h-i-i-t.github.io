@@ -8,7 +8,7 @@ import { useTheme, useMediaQuery } from '@mui/material';
 const BlogContainer = styled("article")(({ theme }) => ({
   // ...theme.mixins.blogContainer, // Github Pagesに上げる時にmixinsが反映されない
   width: "100%",
-  minHeight: "250px",
+  minHeight: "200px",
   marginBottom: "24px",
   "@media (max-width:375px)": {
     minHeight: "150px",
@@ -28,7 +28,7 @@ const BlogImage = styled("div")({
   borderRadius: 8,
   "@media (max-width:375px)": {
     float: "none",
-    minWidth: "320px",
+    minWidth: "330px",
     minHeight: "100px",
     maxHeight: "160px",
     marginLeft: "auto",
