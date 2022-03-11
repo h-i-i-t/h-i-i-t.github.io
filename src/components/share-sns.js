@@ -21,7 +21,6 @@ const ButtonWrapper = styled.div`
 `
 
 const ShareSns = ({title, url}) => {
-  console.log('url: ', url)
   return (
     <Wrapper>
       <ButtonWrapper>
