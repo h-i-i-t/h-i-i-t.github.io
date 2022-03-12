@@ -2,7 +2,18 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { styled } from "@mui/material/styles";
 
+const FlexBox = styled(`div`)({
+  width: `100%`,
+  display: `flex`,
+  justifyContent: `space-start`,
+  flexWrap: `wrap`,
+  "@media (max-width:375px)": {
+    justifyContent: `space-between`,
+  },
+});
+
 const HLink = styled(Link)({
+  margin: 32,
   marginLeft: `32px`,
   marginRight: `32px`,
   fontSize: `1.3em`,
@@ -10,15 +21,19 @@ const HLink = styled(Link)({
   textDecoration: `none`,
 });
 
+const Footer = styled(`footer`)({
+  display: `flex`,
+  justifyContent: `center`,
+});
+
 const Layout = ({ location, title, children }) => {
-  // const classes = useStyles()
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
 
   if (isRootPath) {
     header = (
-      <div>
+      <FlexBox>
         <HLink to={`/`}>
           {`hi1t0`}
         </HLink>
@@ -28,11 +43,11 @@ const Layout = ({ location, title, children }) => {
         <HLink to={`/${process.env.GATSBY_ROUTE_TAG}`}>
           {`tag`}
         </HLink>
-      </div>
+      </FlexBox>
     )
   } else {
     header = (
-      <div>
+      <FlexBox>
         <HLink to={`/`}>
           {`hi1t0`}
         </HLink>
@@ -42,19 +57,19 @@ const Layout = ({ location, title, children }) => {
         <HLink to={`/${process.env.GATSBY_ROUTE_TAG}`}>
           {`tag`}
         </HLink>
-      </div>
+      </FlexBox>
     )
   }
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
+    <div data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
-      <main>{children}</main>
-      <footer>
+      <main className="global-wrapper" >{children}</main>
+      <Footer>
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+      </Footer>
     </div>
   )
 }

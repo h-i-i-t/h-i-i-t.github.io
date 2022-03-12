@@ -7,7 +7,7 @@ module.exports = {
     title: `hi1t0`,
     author: {
       name: `hi1t0`,
-      summary: `who lives and works in Japan building useful things.`,
+      summary: `ReactやFlutter使っています。`,
     },
     description: `日々学んだことなどを書き溜めていく。主にjavascript、react、html、css、firebase、flutter、githubなどweb制作のものが多くなると思います`,
     siteUrl: `https://hi1t0.com`,
