@@ -1,4 +1,202 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hi1t0 RSS Feed]]></title><description><![CDATA[日々学んだことなどを書き溜めていく。主にjavascript、react、html、css、firebase、flutter、githubなどweb制作のものが多くなると思います]]></description><link>https://hi1t0.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 11 Mar 2022 02:35:56 GMT</lastBuildDate><item><title><![CDATA[gatsby-starter-blogにタグページを追加する。]]></title><description><![CDATA[編集する箇所は、gatsby-node.js、投稿する markdown  新たに src/templates/tags-and-blog-list.js、
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[hi1t0 RSS Feed]]></title><description><![CDATA[日々学んだことなどを書き溜めていく。主にjavascript、react、html、css、firebase、flutter、githubなどweb制作のものが多くなると思います]]></description><link>https://hi1t0.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 12 Mar 2022 01:26:38 GMT</lastBuildDate><item><title><![CDATA[gatsby-starter-blogに追加したタグの見た目を整える。material-uiのchipコンポーネント]]></title><description><![CDATA[編集前の見た目は  ソースコードは src/component/tags.js 主な変更点は、tags.map の中のの部分を material-ui のコンポーネントに変えた 細部の調整は material-ui の makeStyles…]]></description><link>https://hi1t0.com/20220312/add-tag-to-gatsby-blog/</link><guid isPermaLink="false">https://hi1t0.com/20220312/add-tag-to-gatsby-blog/</guid><pubDate>Sat, 12 Mar 2022 11:11:11 GMT</pubDate><content:encoded>&lt;p&gt;編集前の見た目は&lt;/p&gt;
+&lt;div style=&quot;width: 100%; margin-left: auto; margin-right: auto&quot;&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bd40bbf5670db8b3262b8184f2efdf86/aa440/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 112.0253164556962%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAACXBIWXMAABYlAAAWJQFJUiTwAAAC4klEQVQ4y51V227cOAzN/z/vd/R5XxZFCyx20csmbZJNpxNnPB6PL5IlXyTZsmznLMjJpOkF7WQFEBRp+ZjiIekzKSuUpUCtFZRSMNZimiaEEE6TacI4jhClhBEaZ8uywA8DdqJFpg3CNIN8B7nH/f2vZSGh8/OCMwBY5hlR3uDjVsGNE54ueuE5iwHD6HGdVHh9k+HDtsKnfY3aekzzclKET4UBKWdb0eIyUbjeaSSVQaoMGjc+RvkswDCO+PchwnXecB6PQMuTPJ0EyJtlQec8rA8n5emXESrrOXcfE4U/VzneRQJXO4XzjcS7O8HP/rhK2ReL7qfsM6BuDbaZQFpIqK6Hth5tPzIxtRthhsD5bPvwXRV8GzUDUh02WqN3Fr7v0VsDZw1GP7CPNNnWdKyrqoLWGk3TQEqJuq65Dh/LphQCn9dr3EYRougOd5sNVqsVNnGMLMu4k/KiQJqmSNM9drsd+/dZhu02QZblmOf5C6D3A+YwYnCHqIIf4HuHoXe4X+ZnEXWIsB3wfiPxflPhZt/gYqt4f7XTXOREzpuoZHIu4uqhXhXbbyOBT1nNoMsR8DKp8Nvvl3jxJuKDVTegbBzrxnkUTY+8dqgM+XsmTJkBshsg2p5JO0bJgDRhKqXQdS158X/WV1e21iDPM+R5ziOMwIk9EqU1kyar6sBuXTM5TJYQrJMkgff+Cyn0YhzHuL29xXq95pIQQqBtGrRtC2stnHMwxnCJSCnQdR3bdI4+dJxKh14OAdYRq/3jl354rROuzYB7bfHqJsM5MbjT3H7nsWT563PBE+gfqoI7gVVW4+V1ir/XBS5iyTYR8xVgZywKqVBIDecDhjDDhxnjNPPAOO5pPoZ5wTgt8NNBk/10OjEg5aksCzR1jUpKaFWhqTWcsyya/jXGMHl0VogSUggoIkkpziPN1MccUk8SW/SgLEveF0WBtus4+eTvjIHWNRNwbEOqCiJwfvgHUYT/Adk2nt2NRlYDAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;test&quot;
+        title=&quot;test&quot;
+        src=&quot;/static/bd40bbf5670db8b3262b8184f2efdf86/f058b/1.png&quot;
+        srcset=&quot;/static/bd40bbf5670db8b3262b8184f2efdf86/c26ae/1.png 158w,
+/static/bd40bbf5670db8b3262b8184f2efdf86/6bdcf/1.png 315w,
+/static/bd40bbf5670db8b3262b8184f2efdf86/f058b/1.png 630w,
+/static/bd40bbf5670db8b3262b8184f2efdf86/40601/1.png 945w,
+/static/bd40bbf5670db8b3262b8184f2efdf86/78612/1.png 1260w,
+/static/bd40bbf5670db8b3262b8184f2efdf86/aa440/1.png 1500w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;ソースコードは src/component/tags.js&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Link &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;gatsby&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; _ &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;lodash&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; TagIcon &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;@mui/icons-material/Tag&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; makeStyles &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;@mui/styles&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; useStyles &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;makeStyles&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;selectedTag&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;blue&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;Tags&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; tags&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; selectedTag &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; classes &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useStyles&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div className&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;classes&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tags&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;tags&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;tag&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;li key&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;tag&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;fieldValue&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+          &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;TagIcon
+            style&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;paddingTop&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;2px&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;fontSize&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;1.0em&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token literal-property property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;#09427B&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+          &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Link
+            to&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;/tags/&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;_&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;kebabCase&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;tag&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;fieldValue&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+            className&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+              selectedTag &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; tag&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;fieldValue &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; classes&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;selectedTag &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;tag&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;fieldValue&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;span&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;tag&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;totalCount&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;span&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+          &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;Link&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+        &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;li&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; Tags&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;主な変更点は、tags.map の中の&lt;code class=&quot;language-text&quot;&gt;&amp;lt;li&gt;&lt;/code&gt;の部分を material-ui の&lt;code class=&quot;language-text&quot;&gt;&amp;lt;Chip&gt;&lt;/code&gt;コンポーネントに変えた&lt;/p&gt;
+&lt;p&gt;細部の調整は material-ui の makeStyles を使用&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;/* タグリスト */&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; React &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;react&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; _ &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;lodash&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; makeStyles &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;@mui/styles&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Chip &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;@mui/material&quot;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// import TagIcon from &apos;@mui/icons-material/Tag&apos;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; useStyles &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;makeStyles&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;tagsContainer&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;flex&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;flexWrap&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;wrap&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;justifyContent&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;alignItems&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;4px&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;tagIcon&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;paddingTop&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;paddingBottom&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;tagsTotalCount&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;marginLeft&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;sortTotalCount&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token parameter&quot;&gt;tags&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt;
+  _&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;orderBy&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;tags&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;totalCount&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;fieldValue&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;desc&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;Tags&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; tags&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; selectedTag &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; classes &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useStyles&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div className&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;classes&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tagsContainer&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sortTotalCount&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;tags&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;tag&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;token comment&quot;&gt;// {tags.map( tag =&gt; (&lt;/span&gt;
+        &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;div key&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;tag&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;fieldValue&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; className&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;classes&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;tag&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+          &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Chip
+            label&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;tag&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;fieldValue&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;tag&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;totalCount&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+            component&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;a&quot;&lt;/span&gt;
+            href&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;/tags/&lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;_&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;kebabCase&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;tag&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;fieldValue&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+            variant&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;selectedTag &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; tag&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;fieldValue &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;outlined&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+            clickable
+            &lt;span class=&quot;token comment&quot;&gt;// icon={&amp;lt;TagIcon className={classes.tagIcon} /&gt;}&lt;/span&gt;
+          &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+        &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;div&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; Tags&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;変更後は見やすくすっきりしました&lt;/p&gt;
+&lt;div style=&quot;width: 100%; margin-left: auto; margin-right: auto&quot;&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a2c597cdf84cc823bcf73cfce317681f/2cefc/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 120.25316455696202%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAABYlAAAWJQFJUiTwAAADm0lEQVQ4y51V247kNBDt//8FJHjggQdWK3hDaNkBhl0Nsxdgbj09fU/nfk/s3GwnB1Wl06sRMxoJSyVXKvZxXKdOZRYEAaI4gecHCMIQYRgiy3J0SkEpha4bTamnrWlbBH6A0o8hhMBMKQ2tFXqjoBmgw9Ab0DCmxzRM36N/wiiuCaNT0NpgRotlq3DvZMirjjcvvRxuVrFvJxJWLNgfhgEvjdnkNLrHMO6CaBRkozhetRpl050AX7KZ1hqO48J1XNi2c4Qf/vNFLwHRHgakPGR5gaIokWb5cTMeAT43T6MfBjYGnF4SMZ7noaoqRFEEy7LYj+OY5yRJeLZtm9mkOPm0h245HcSABJnlORYPD9jt9rAOB3iej+1uh812y8+73Q55nmO93mBvWUjSFA/LJdbrNYSUXwCnfKHXkGUBUeRo64pzIst8jJUFKlHCaIW2lmgqAQwGtRQnf8r9TJse11aM9w8+VkGJTSh4/vnqgCsrhZc3cLMaViLh5TXunBy3Toa5k2EdCn6+szOs/ByENaMa/OrtHK8vN3hzbePs1sab6wNeXazx9sbGu4WHHz9usfQyvF94OJ+7+O7dEt+eL/D9xQo/fNjg67M55nY61qE2BpYfIy8lCiHRaYNW96ecdKaHaDX6AeybfkCjNPK6g2g0WmXQKMMsMyBtkkJwwok9YqxrWy4jYwzHyqJAWQpIKdG2LUtTdS0qKdE0Dcdo7YnlMIrhegEcz+ealFXNzSJJM6RZBj+MsN1Z2Fs2HNdnVmkd1a0QkmdZjVKdEXKWpgA3hOGkksf+SS/8dbSHBDGpZGoUo1KGAXmt4GUV9rHAPhLw8wph0cBOJRLRcHMgVrdhyfHnesSoZdPj09rH502IGyvGn6sAHzch7uwUl6sAf+9iLNwMnzbRWCpBwcQ8p2++cpGlaCp5LGg8ahBPDSKOrvhU45hRE/X8kC2KU+7elOQ4SZHmxZGYHGGcIIhijtOaOE6YXWL5ESCdZDsu1lvS7R67vQXX89kcx+N3B9uBH4Ts80FpBsf1OB6E0RfCprLhKxg9/ie0Rtt1qJoWndJsVPyUGvLpRk03ruN430MdC57Lhqr8p6sDXn/Y4o+Fz6T8Nndxfu/hr12Ef/Yxfr/38MuNjc/bCL/eOUwQxWktSfPs1kFZd0fATuObszu8uljhcumjqDqWExnJkE6vO82/AnqmmSpDaXOU3Rh/lENRlujaBk1d4/+OCfBf/is0L57KgYYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;test&quot;
+        title=&quot;test&quot;
+        src=&quot;/static/a2c597cdf84cc823bcf73cfce317681f/f058b/2.png&quot;
+        srcset=&quot;/static/a2c597cdf84cc823bcf73cfce317681f/c26ae/2.png 158w,
+/static/a2c597cdf84cc823bcf73cfce317681f/6bdcf/2.png 315w,
+/static/a2c597cdf84cc823bcf73cfce317681f/f058b/2.png 630w,
+/static/a2c597cdf84cc823bcf73cfce317681f/40601/2.png 945w,
+/static/a2c597cdf84cc823bcf73cfce317681f/78612/2.png 1260w,
+/static/a2c597cdf84cc823bcf73cfce317681f/2cefc/2.png 1400w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div style=&quot;width: 100%; margin-left: auto; margin-right: auto&quot;&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2e2c89fa728059c33118b4eb673082f7/2cefc/3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 120.25316455696202%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAABYlAAAWJQFJUiTwAAADm0lEQVQ4y5WV247cRBCG5x15Ap4LiRsuuAAhuEVRAqwSEhYilA27Oyd7xvb4fGifD237Q90zszsJKwKWSl3Vri511f9X9WK5WrE1TC2b7VaL63mIPGcYJF3f0/cDw/C0tF1H4AcUfkxZliyyTJCmKWUhSJOEKI6Rfcc8jYzjxPGbGaeJ6QlR+3KQyH5AypGFcu/lxNovKLtRH793BVHRnvSMMG+OYeeZT32Ls1K2A70c1Snypqfppd7P6552kA8BPyULKSWbrYEc+n/c4mP93+TssxjHEcs+0HVPB5xOcrT5YD1/Zx8d8Byg6zocx6Gua6IowrZtmqahbhqNdJIkVFWlfYqi1LbSPc/TaD/cUF8ZyIRgtVqx2+2xbBvP89ntdjqwOqh0IQRbw2BvWSRpymq91jQrq+oxIJzuP0mqIqfMBV1Ta6pUudC2krosGOVA11S0dQnzSFOVD/qZXothnLixYl6tfDZBgRGWev3xnc07K8UTLW7WYCUVnmi4PQj+OmTcHTK2YantWydj4wvkOLGoOskXz+/47jeTZzcOz987PLux+fb1Rusvlx4//G6y9jJeLT1+uXP5+uWar66WfPN6w/fXBl++uOPWSY88VLSx/YgkExRVjZxmOjk91GQYZ4pWMs1oXa3tMJK3krKT2rcbpnPhWKj2EVlKmiaURUHXtTRNTaJaUEryXFCVBaWSIqcqS4a+O+kFdVXRNo1mhAZFBTRMk91+j3M46KEQRhGmaRLHMb7vYzsO5m6Hae704IiThCAMdd8HQUgQBLRt+0jsNA41ysyPw+BJ0f8/7uf54pxKeZ41gnZSEeQt+6jgkFZ4WY0nauKiZe0Llp5gF5UYYaHtQDRYcal9qu6C2Arqt0bAm7XHryuPTZBzbYRcb0PebAL+3Cf8YUa8NSPuDxnv7ZS3Zsw2KFi6GbuwIKu6y16WiDQmzxKGtj5lMXJJ+EviHlMcP0hT6ap0OqDqwzMoquCq0Aoc23a0vd0aur0OrqttwzD0ngJN7anh7LoelmU9ghLHAaZpzPv9Xje9QlaJGhh93+tVoaiooQaE0tW4V72tLlTVtd4/9TJME/M4HlO6nG//9zvdsOHq6vPZda/mMCqI4mh2nMMjz8JIr8npvVEc9Xz/xMHgaGfV6f3RAev5558+m63Di3nrNSydcL63Q0w/ZeOmGH6q01ap9foF7B9K0fenkgxHQLhI+UjP+dirl/Jfsz+/KX8Dv/MwolJwxU0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;test&quot;
+        title=&quot;test&quot;
+        src=&quot;/static/2e2c89fa728059c33118b4eb673082f7/f058b/3.png&quot;
+        srcset=&quot;/static/2e2c89fa728059c33118b4eb673082f7/c26ae/3.png 158w,
+/static/2e2c89fa728059c33118b4eb673082f7/6bdcf/3.png 315w,
+/static/2e2c89fa728059c33118b4eb673082f7/f058b/3.png 630w,
+/static/2e2c89fa728059c33118b4eb673082f7/40601/3.png 945w,
+/static/2e2c89fa728059c33118b4eb673082f7/78612/3.png 1260w,
+/static/2e2c89fa728059c33118b4eb673082f7/2cefc/3.png 1400w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[gatsby-starter-blogにタグページを追加する。]]></title><description><![CDATA[編集する箇所は、gatsby-node.js、投稿する markdown  新たに src/templates/tags-and-blog-list.js、
 src/components/tags.js を生成 gatsby-node.js…]]></description><link>https://hi1t0.com/20220311/</link><guid isPermaLink="false">https://hi1t0.com/20220311/</guid><pubDate>Fri, 11 Mar 2022 11:11:11 GMT</pubDate><content:encoded>&lt;p&gt;編集する箇所は、gatsby-node.js、投稿する markdown&lt;/p&gt;
 &lt;div style=&quot;width: 100%; margin-left: auto; margin-right: auto&quot;&gt;
 &lt;p&gt;&lt;span
