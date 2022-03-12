@@ -42,7 +42,7 @@ const MuiThemeProvider = ({ children }) => {
         // [theme.breakpoints.up("md")]: {
         //     backgroundColor: theme.palette.primary.main,
         // },
-        // "@media (min-width:992px)": {
+        // "@media (min-width:993px)": {
         //     width: "400px",
         // },
         // [theme.breakpoints.up("lg")]: {

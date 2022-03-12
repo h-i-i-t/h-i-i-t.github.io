@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { styled } from "@mui/material/styles";
 
-const FlexBox = styled(`div`)({
+const FlexHeader = styled(`div`)({
   width: `100%`,
   display: `flex`,
   justifyContent: `space-start`,
@@ -33,7 +33,7 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <FlexBox>
+      <FlexHeader>
         <HLink to={`/`}>
           {`hi1t0`}
         </HLink>
@@ -43,11 +43,11 @@ const Layout = ({ location, title, children }) => {
         <HLink to={`/${process.env.GATSBY_ROUTE_TAG}`}>
           {`tag`}
         </HLink>
-      </FlexBox>
+      </FlexHeader>
     )
   } else {
     header = (
-      <FlexBox>
+      <FlexHeader>
         <HLink to={`/`}>
           {`hi1t0`}
         </HLink>
@@ -57,7 +57,7 @@ const Layout = ({ location, title, children }) => {
         <HLink to={`/${process.env.GATSBY_ROUTE_TAG}`}>
           {`tag`}
         </HLink>
-      </FlexBox>
+      </FlexHeader>
     )
   }
 

@@ -31,7 +31,7 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   return (
-    <div className="bio">
+    <div style={{ width: "100%" }} className="bio">
       <StaticImage
         className="bio-avatar"
         layout="fixed"
@@ -47,7 +47,7 @@ const Bio = () => {
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
           <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            お気軽にフォローお願いします。
+            気軽にフォローお願いします。
           </a>
         </p>
       )}
