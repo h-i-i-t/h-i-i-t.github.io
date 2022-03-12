@@ -249,6 +249,15 @@ a:focus {
   padding: var(--spacing-10) var(--spacing-5);
 }
 
+/* レスポンシブ対応 */
+/* @media screen and (min-width: 993px) {
+  .global-wrapper {
+    max-width: var(--maxWidth-full);
+    display: flex;
+    flex-wrap:wrap
+  }
+} */
+
 .global-wrapper[data-is-root-path="true"] .bio {
   margin-bottom: var(--spacing-20);
 }
