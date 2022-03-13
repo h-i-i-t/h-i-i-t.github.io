@@ -10,7 +10,7 @@ module.exports = {
       summary: `ReactやFlutter使っています。`,
     },
     description: `日々学んだことなどを書き溜めていく。主にjavascript、react、html、css、firebase、flutter、githubなどweb制作のものが多くなると思います`,
-    siteUrl: `https://hi1t0.com`,
+    siteUrl: `https://hi1t0.info`,
     social: {
       twitter: `hi1t0`,
     },

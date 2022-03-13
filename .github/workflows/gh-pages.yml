@@ -39,7 +39,7 @@ jobs:
           GATSBY_ROUTE_TAG: ${{ secrets.GATSBY_ROUTE_TAG }}
 
 
-      - run: echo hi1t0.com > public/CNAME
+      - run: echo hi1t0.info > public/CNAME
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
